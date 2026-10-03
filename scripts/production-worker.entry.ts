@@ -4,6 +4,7 @@ import { ProductionError } from '../src/production/errors';
 import { PRODUCTION_OBJECT_KINDS, parseProductionRef, type ProductionObjectKind } from '../src/production/contracts';
 import { LocalProductionStore } from '../src/production/store';
 import { compareProductionCandidateBuilds } from '../src/production/comparison';
+import { LocalMaintenanceStore } from '../src/production/maintenance';
 
 const limit = 2 * 1024 * 1024;
 async function main() {
@@ -33,6 +34,12 @@ async function main() {
     } else if (input.action === 'COMPARE_CANDIDATE_BUILDS') {
       exactFields(input, ['schema', 'action', 'request']);
       value = compareProductionCandidateBuilds(input.request, root);
+    } else if (input.action === 'PLAN_MAINTENANCE') {
+      exactFields(input, ['schema', 'action', 'request']);
+      value = new LocalMaintenanceStore(root).plan(input.request);
+    } else if (input.action === 'INSPECT_MAINTENANCE') {
+      exactFields(input, ['schema', 'action', 'reference']);
+      value = new LocalMaintenanceStore(root).inspect(parseProductionRef(input.reference));
     } else if (input.action === 'CATALOG') {
       exactFields(input, ['schema', 'action']);
       value = store.catalog();
