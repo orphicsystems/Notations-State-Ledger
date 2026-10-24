@@ -89,6 +89,15 @@ records keep distinct identities. A result enters governed state only through
 an explicit admission boundary. A display link grants neither access nor
 execution authority; fixture-scoped projections must not expose unadmitted data.
 
+## Corpus maintenance backend
+
+The local production backend now supports [retained maintenance plans](docs/CORPUS_MAINTENANCE.md).
+An operator-declared artifact correction or withdrawal can identify dependent
+normalizations and candidate builds from exact selected run receipts, save the
+review plan, and reopen it with fresh integrity checks. The CLI and guarded
+local API preserve the selected-run coverage limit. Plans do not execute
+rebuilds, admit records, or activate releases.
+
 ## Existing interfaces and compatibility
 
 Use [TECHNICAL_REFERENCE.md](TECHNICAL_REFERENCE.md) for the existing local

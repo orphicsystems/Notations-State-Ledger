@@ -44,7 +44,8 @@
     "caravan:po-exceptions": "esbuild scripts/caravan-po-exceptions.entry.ts --bundle --platform=node --format=esm --outfile=.stamp/caravan-po-exceptions.mjs --log-level=warning && node .stamp/caravan-po-exceptions.mjs",
     "research:ledger": "esbuild scripts/research-ledger.entry.ts --bundle --platform=node --format=esm --outfile=.stamp/research-ledger.mjs --log-level=warning && node .stamp/research-ledger.mjs",
     "instrument:workbench:build": "esbuild scripts/workbench-candidate.entry.ts --bundle --platform=node --format=esm --outfile=.stamp/workbench-candidate.mjs --log-level=warning",
-    "mutate:dossier": "node scripts/mutate-ledger.mjs src/db/dossierLedger.mutations.json"
+    "mutate:dossier": "node scripts/mutate-ledger.mjs src/db/dossierLedger.mutations.json",
+    "maintenance": "esbuild scripts/maintenance.entry.ts --bundle --platform=node --format=esm --outfile=.stamp/maintenance.mjs --log-level=warning && node .stamp/maintenance.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
