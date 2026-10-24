@@ -1,0 +1,499 @@
+{
+  "artifacts": [
+    {
+      "id": "annotation",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:3921da0d8b50806b159e01cf47c8438671489e30ceb7ffb92de7ee0bcef8e931",
+          "id": "replay-synthetic-annotation"
+        },
+        "evidence": {
+          "contentDigest": "sha256:58eb98fa0d9409dbad839779ea5c061b247aae18546407b70cb2165566b96ad6",
+          "id": "replay-evidence-synthetic-annotation"
+        }
+      },
+      "role": "ANNOTATION"
+    },
+    {
+      "id": "calibration",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:83e0f18ce5542a62567b75bf49b59de3598028f9a7cbee04c90d0c2b7146a27e",
+          "id": "replay-synthetic-calibration"
+        },
+        "evidence": {
+          "contentDigest": "sha256:e41f855b77fb13394a5d3873bc2395461069efa57cd572771ff2debcb083ec45",
+          "id": "replay-evidence-synthetic-calibration"
+        }
+      },
+      "role": "CALIBRATION"
+    },
+    {
+      "id": "raw",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:64b4bf0e98c5540d59b20a4cef6fbbe40574f4f4b8dfb999c6a8215ecf0afabc",
+          "id": "replay-synthetic-raw"
+        },
+        "evidence": {
+          "contentDigest": "sha256:f4d79f9f73d0fed001f6e5bf9f929b53feb9924f8091480495c9b9b41a35be65",
+          "id": "replay-evidence-synthetic-raw"
+        }
+      },
+      "role": "RAW"
+    },
+    {
+      "id": "trajectory",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:c9a2c5166be891d78afca20da129fd2591142e90d4b5a90c07a8850b5fc13025",
+          "id": "replay-synthetic-trajectory"
+        },
+        "evidence": {
+          "contentDigest": "sha256:d6afbc98670895416a5e5c13d5973fcaf5a915b3ef6072e69fe1411ca4e0d919",
+          "id": "replay-evidence-synthetic-trajectory"
+        }
+      },
+      "role": "TRAJECTORY"
+    }
+  ],
+  "bodyFrame": {
+    "artifactId": "calibration",
+    "definition": "Synthetic right-handed Cartesian axes; camera x right, y down, z forward. All units metres.",
+    "id": "body"
+  },
+  "calibrations": [
+    {
+      "artifactId": "calibration",
+      "covariance": null,
+      "id": "camera-mount",
+      "intrinsics": {
+        "cx": 320,
+        "cy": 240,
+        "fx": 100,
+        "fy": 100,
+        "model": "RECTIFIED_PINHOLE"
+      },
+      "sensorId": "camera",
+      "sensorToBody": {
+        "rotation": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationM": [
+          0,
+          0,
+          0
+        ]
+      },
+      "validFromReferenceNs": "0",
+      "validUntilReferenceNs": "3000000000",
+      "version": "synthetic-1.0.0"
+    },
+    {
+      "artifactId": "calibration",
+      "covariance": null,
+      "id": "gnss-mount",
+      "intrinsics": null,
+      "sensorId": "gnss",
+      "sensorToBody": {
+        "rotation": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationM": [
+          0,
+          0,
+          0
+        ]
+      },
+      "validFromReferenceNs": "0",
+      "validUntilReferenceNs": "3000000000",
+      "version": "synthetic-1.0.0"
+    },
+    {
+      "artifactId": "calibration",
+      "covariance": null,
+      "id": "imu-mount",
+      "intrinsics": null,
+      "sensorId": "imu",
+      "sensorToBody": {
+        "rotation": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationM": [
+          0,
+          0,
+          0
+        ]
+      },
+      "validFromReferenceNs": "0",
+      "validUntilReferenceNs": "3000000000",
+      "version": "synthetic-1.0.0"
+    },
+    {
+      "artifactId": "calibration",
+      "covariance": null,
+      "id": "lidar-mount",
+      "intrinsics": null,
+      "sensorId": "lidar",
+      "sensorToBody": {
+        "rotation": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationM": [
+          1,
+          0,
+          0
+        ]
+      },
+      "validFromReferenceNs": "0",
+      "validUntilReferenceNs": "3000000000",
+      "version": "synthetic-1.0.0"
+    }
+  ],
+  "classification": "SYNTHETIC",
+  "clocks": [
+    {
+      "artifactId": "calibration",
+      "basis": "MONOTONIC",
+      "id": "sensor-clock",
+      "offsetToReferenceNs": "0",
+      "uncertaintyNs": "10000000",
+      "validFromNs": "0",
+      "validUntilNs": "3000000000"
+    }
+  ],
+  "id": "synthetic-replay",
+  "observations": [
+    {
+      "artifactId": "raw",
+      "association": {
+        "artifactId": "annotation",
+        "objectId": "target",
+        "probability": null,
+        "status": "ASSUMED_STATIC"
+      },
+      "captureTimeNs": "1000000000",
+      "clockId": "sensor-clock",
+      "gnss": null,
+      "id": "camera-A",
+      "measurement": {
+        "kind": "PIXEL",
+        "pixel": [
+          320,
+          240
+        ]
+      },
+      "poseId": "pose-A",
+      "processing": {
+        "artifactIds": [
+          "raw",
+          "calibration"
+        ],
+        "method": "SYNTHETIC_FIXTURE_GENERATOR",
+        "version": "1.0.0"
+      },
+      "selector": "synthetic:camera-A",
+      "sensorId": "camera",
+      "sessionId": "session-A"
+    },
+    {
+      "artifactId": "raw",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "captureTimeNs": "1000000000",
+      "clockId": "sensor-clock",
+      "gnss": {
+        "correctionAgeSeconds": null,
+        "correctionSource": null,
+        "solutionStatus": "RTK_FIXED"
+      },
+      "id": "gnss-A",
+      "measurement": {
+        "kind": "CONTEXT"
+      },
+      "poseId": "pose-A",
+      "processing": {
+        "artifactIds": [
+          "raw",
+          "calibration"
+        ],
+        "method": "SYNTHETIC_FIXTURE_GENERATOR",
+        "version": "1.0.0"
+      },
+      "selector": "synthetic:gnss-A",
+      "sensorId": "gnss",
+      "sessionId": "session-A"
+    },
+    {
+      "artifactId": "raw",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "captureTimeNs": "1000000000",
+      "clockId": "sensor-clock",
+      "gnss": null,
+      "id": "imu-A",
+      "measurement": {
+        "kind": "CONTEXT"
+      },
+      "poseId": "pose-A",
+      "processing": {
+        "artifactIds": [
+          "raw",
+          "calibration"
+        ],
+        "method": "SYNTHETIC_FIXTURE_GENERATOR",
+        "version": "1.0.0"
+      },
+      "selector": "synthetic:imu-A",
+      "sensorId": "imu",
+      "sessionId": "session-A"
+    },
+    {
+      "artifactId": "raw",
+      "association": {
+        "artifactId": "annotation",
+        "objectId": "target",
+        "probability": null,
+        "status": "ASSUMED_STATIC"
+      },
+      "captureTimeNs": "1000000000",
+      "clockId": "sensor-clock",
+      "gnss": null,
+      "id": "lidar-A",
+      "measurement": {
+        "kind": "POINT3D",
+        "pointM": [
+          -1,
+          0,
+          10
+        ]
+      },
+      "poseId": "pose-A",
+      "processing": {
+        "artifactIds": [
+          "raw",
+          "calibration"
+        ],
+        "method": "SYNTHETIC_FIXTURE_GENERATOR",
+        "version": "1.0.0"
+      },
+      "selector": "synthetic:lidar-A",
+      "sensorId": "lidar",
+      "sessionId": "session-A"
+    },
+    {
+      "artifactId": "raw",
+      "association": {
+        "artifactId": "annotation",
+        "objectId": "target",
+        "probability": null,
+        "status": "ASSUMED_STATIC"
+      },
+      "captureTimeNs": "2000000000",
+      "clockId": "sensor-clock",
+      "gnss": null,
+      "id": "lidar-B",
+      "measurement": {
+        "kind": "POINT3D",
+        "pointM": [
+          -3,
+          0,
+          10
+        ]
+      },
+      "poseId": "pose-B",
+      "processing": {
+        "artifactIds": [
+          "raw",
+          "calibration"
+        ],
+        "method": "SYNTHETIC_FIXTURE_GENERATOR",
+        "version": "1.0.0"
+      },
+      "selector": "synthetic:lidar-B",
+      "sensorId": "lidar",
+      "sessionId": "session-B"
+    }
+  ],
+  "poses": [
+    {
+      "artifactId": "trajectory",
+      "bodyToWorld": {
+        "rotation": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationM": [
+          0,
+          0,
+          0
+        ]
+      },
+      "covariance": null,
+      "id": "pose-A",
+      "referenceTimeNs": "1000000000",
+      "sessionId": "session-A",
+      "velocityWorldMps": [
+        20,
+        0,
+        0
+      ]
+    },
+    {
+      "artifactId": "trajectory",
+      "bodyToWorld": {
+        "rotation": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationM": [
+          2,
+          0,
+          0
+        ]
+      },
+      "covariance": null,
+      "id": "pose-B",
+      "referenceTimeNs": "2000000000",
+      "sessionId": "session-B",
+      "velocityWorldMps": [
+        20,
+        0,
+        0
+      ]
+    }
+  ],
+  "referenceClock": {
+    "basis": "MONOTONIC",
+    "definition": "Shared synthetic epoch; two explicitly timed collection sessions.",
+    "id": "fixture-reference-clock"
+  },
+  "schema": "payload.observation-bundle.v1",
+  "sensors": [
+    {
+      "calibrationId": "camera-mount",
+      "definition": "Synthetic x right, y down, z forward; mounting transform declared separately.",
+      "frameId": "camera-frame",
+      "id": "camera",
+      "modality": "CAMERA"
+    },
+    {
+      "calibrationId": "gnss-mount",
+      "definition": "Synthetic x right, y down, z forward; mounting transform declared separately.",
+      "frameId": "gnss-frame",
+      "id": "gnss",
+      "modality": "GNSS"
+    },
+    {
+      "calibrationId": "imu-mount",
+      "definition": "Synthetic x right, y down, z forward; mounting transform declared separately.",
+      "frameId": "imu-frame",
+      "id": "imu",
+      "modality": "IMU"
+    },
+    {
+      "calibrationId": "lidar-mount",
+      "definition": "Synthetic x right, y down, z forward; mounting transform declared separately.",
+      "frameId": "lidar-frame",
+      "id": "lidar",
+      "modality": "LIDAR"
+    }
+  ],
+  "worldFrame": {
+    "artifactId": "calibration",
+    "axes": "RIGHT_HANDED",
+    "definition": "Synthetic right-handed Cartesian axes; camera x right, y down, z forward. All units metres.",
+    "id": "world",
+    "units": "m"
+  }
+}

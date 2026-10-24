@@ -1,0 +1,287 @@
+{
+  "bundleDigest": "sha256:6010cffcd398777075c9ef4b8e59670ad2e5eb413a761c02154a7c628395966c",
+  "classification": "SYNTHETIC",
+  "comparisons": [
+    {
+      "calibratedAccuracyEstablished": false,
+      "crossSession": false,
+      "id": "cross-sensor",
+      "interpretation": "CONDITIONAL_ON_DECLARED_STATIC_ASSOCIATION_AND_CALIBRATION",
+      "leftId": "lidar-A",
+      "objectId": "target",
+      "reasons": [],
+      "residual": {
+        "components": [
+          0,
+          0
+        ],
+        "magnitude": 0,
+        "units": "px"
+      },
+      "rightId": "camera-A",
+      "status": "DESCRIPTIVE_RESIDUAL"
+    },
+    {
+      "calibratedAccuracyEstablished": false,
+      "crossSession": true,
+      "id": "cross-session",
+      "interpretation": "CONDITIONAL_ON_DECLARED_STATIC_ASSOCIATION_AND_CALIBRATION",
+      "leftId": "lidar-A",
+      "objectId": "target",
+      "reasons": [],
+      "residual": {
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "magnitude": 0,
+        "units": "m"
+      },
+      "rightId": "lidar-B",
+      "status": "DESCRIPTIVE_RESIDUAL"
+    }
+  ],
+  "coverage": {
+    "aligned": 5,
+    "compared": 2,
+    "observations": 5
+  },
+  "digest": "sha256:9e7f17aa65bf7525670997db726161ad50cc875887892d83afd4e8eda0204b33",
+  "fieldAccuracyEstablished": false,
+  "frame": {
+    "artifactId": "calibration",
+    "axes": "RIGHT_HANDED",
+    "definition": "Synthetic right-handed Cartesian axes; camera x right, y down, z forward. All units metres.",
+    "id": "world",
+    "units": "m"
+  },
+  "method": {
+    "comparison": "DECLARED_STATIC_CORRESPONDENCE",
+    "id": "explicit-pose-observation-replay",
+    "timing": "EXACT_DECLARED_CAPTURE_POSE_ONLY",
+    "transform": "COLUMN_VECTOR_WORLD_FROM_BODY_FROM_SENSOR",
+    "uncertainty": "PRESERVED_NOT_FUSED",
+    "version": "1.0.0"
+  },
+  "parameters": {
+    "pairs": [
+      {
+        "id": "cross-sensor",
+        "leftId": "lidar-A",
+        "rightId": "camera-A"
+      },
+      {
+        "id": "cross-session",
+        "leftId": "lidar-A",
+        "rightId": "lidar-B"
+      }
+    ]
+  },
+  "physicalActionAuthorized": false,
+  "readings": [
+    {
+      "alignment": "DECLARED_POSE_AT_CAPTURE",
+      "association": {
+        "artifactId": "annotation",
+        "objectId": "target",
+        "probability": null,
+        "status": "ASSUMED_STATIC"
+      },
+      "calibrationId": "camera-mount",
+      "calibrationVersion": "synthetic-1.0.0",
+      "clockId": "sensor-clock",
+      "gnss": null,
+      "id": "camera-A",
+      "modality": "CAMERA",
+      "pointWorldM": null,
+      "poseId": "pose-A",
+      "rawArtifactId": "raw",
+      "reasons": [],
+      "referenceTimeNs": "1000000000",
+      "selector": "synthetic:camera-A",
+      "sensorId": "camera",
+      "sessionId": "session-A",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": "10000000",
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": 0.2,
+        "unknowns": [
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    },
+    {
+      "alignment": "DECLARED_POSE_AT_CAPTURE",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "calibrationId": "gnss-mount",
+      "calibrationVersion": "synthetic-1.0.0",
+      "clockId": "sensor-clock",
+      "gnss": {
+        "correctionAgeSeconds": null,
+        "correctionSource": null,
+        "solutionStatus": "RTK_FIXED"
+      },
+      "id": "gnss-A",
+      "modality": "GNSS",
+      "pointWorldM": null,
+      "poseId": "pose-A",
+      "rawArtifactId": "raw",
+      "reasons": [],
+      "referenceTimeNs": "1000000000",
+      "selector": "synthetic:gnss-A",
+      "sensorId": "gnss",
+      "sessionId": "session-A",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": "10000000",
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": 0.2,
+        "unknowns": [
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    },
+    {
+      "alignment": "DECLARED_POSE_AT_CAPTURE",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "calibrationId": "imu-mount",
+      "calibrationVersion": "synthetic-1.0.0",
+      "clockId": "sensor-clock",
+      "gnss": null,
+      "id": "imu-A",
+      "modality": "IMU",
+      "pointWorldM": null,
+      "poseId": "pose-A",
+      "rawArtifactId": "raw",
+      "reasons": [],
+      "referenceTimeNs": "1000000000",
+      "selector": "synthetic:imu-A",
+      "sensorId": "imu",
+      "sessionId": "session-A",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": "10000000",
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": 0.2,
+        "unknowns": [
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    },
+    {
+      "alignment": "DECLARED_POSE_AT_CAPTURE",
+      "association": {
+        "artifactId": "annotation",
+        "objectId": "target",
+        "probability": null,
+        "status": "ASSUMED_STATIC"
+      },
+      "calibrationId": "lidar-mount",
+      "calibrationVersion": "synthetic-1.0.0",
+      "clockId": "sensor-clock",
+      "gnss": null,
+      "id": "lidar-A",
+      "modality": "LIDAR",
+      "pointWorldM": [
+        0,
+        0,
+        10
+      ],
+      "poseId": "pose-A",
+      "rawArtifactId": "raw",
+      "reasons": [],
+      "referenceTimeNs": "1000000000",
+      "selector": "synthetic:lidar-A",
+      "sensorId": "lidar",
+      "sessionId": "session-A",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": "10000000",
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": 0.2,
+        "unknowns": [
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    },
+    {
+      "alignment": "DECLARED_POSE_AT_CAPTURE",
+      "association": {
+        "artifactId": "annotation",
+        "objectId": "target",
+        "probability": null,
+        "status": "ASSUMED_STATIC"
+      },
+      "calibrationId": "lidar-mount",
+      "calibrationVersion": "synthetic-1.0.0",
+      "clockId": "sensor-clock",
+      "gnss": null,
+      "id": "lidar-B",
+      "modality": "LIDAR",
+      "pointWorldM": [
+        0,
+        0,
+        10
+      ],
+      "poseId": "pose-B",
+      "rawArtifactId": "raw",
+      "reasons": [],
+      "referenceTimeNs": "2000000000",
+      "selector": "synthetic:lidar-B",
+      "sensorId": "lidar",
+      "sessionId": "session-B",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": "10000000",
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": 0.2,
+        "unknowns": [
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    }
+  ],
+  "referenceClock": {
+    "basis": "MONOTONIC",
+    "definition": "Shared synthetic epoch; two explicitly timed collection sessions.",
+    "id": "fixture-reference-clock"
+  },
+  "schema": "payload.observation-replay-result.v1"
+}

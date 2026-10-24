@@ -1,0 +1,89 @@
+{
+  "schema": "payload.boreas-slice.v1",
+  "sequence": "boreas-2020-11-26-13-58",
+  "capturedAt": "2026-09-06T01:52:04.045Z",
+  "sourceLicense": "CC-BY-4.0; https://github.com/utiasASRL/pyboreas/blob/master/DATA_LICENSE.md",
+  "files": [
+    {
+      "id": "camera",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/camera/1606417097547313.png",
+      "filename": "camera.bin",
+      "byteLength": 2673149,
+      "digest": "sha256:8f5e6782b0de5681add12101ea35e1a6c67d04bd6eef84ac19ea4e62385a037b",
+      "contentRange": null,
+      "etag": "\"19adf2f58fe8d84f15ca6d70db755a34\""
+    },
+    {
+      "id": "lidar",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/lidar/1606417097502930.bin",
+      "filename": "lidar.bin",
+      "byteLength": 5120304,
+      "digest": "sha256:9158150711120daaa375a8d57363605eea46f906d7ae8d02e3a271e0d7ff5b05",
+      "contentRange": null,
+      "etag": "\"f7491e18c7f3a85078d7d83516c7a3b4\""
+    },
+    {
+      "id": "camera-poses",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/applanix/camera_poses.csv",
+      "filename": "camera-poses.bin",
+      "byteLength": 65536,
+      "digest": "sha256:9354a01ec7b99bd22513648667308c33ab41dec2646832c70f32c6dff42fd566",
+      "contentRange": "bytes 0-65535/5302421",
+      "etag": "\"50b568527aa2b757e58e7261ac9ea546\""
+    },
+    {
+      "id": "lidar-poses",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/applanix/lidar_poses.csv",
+      "filename": "lidar-poses.bin",
+      "byteLength": 65536,
+      "digest": "sha256:a1040dff3b9b1515ea87dc9a74d6cfcbd13d4eeaa85f7080807b9c00eba48029",
+      "contentRange": "bytes 0-65535/2597071",
+      "etag": "\"ad42e74ac11b27051e77486fe0011dd3\""
+    },
+    {
+      "id": "gnss",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/applanix/gps_post_process.csv",
+      "filename": "gnss.bin",
+      "byteLength": 2097152,
+      "digest": "sha256:5db1ff521b0c5ce1095bfe4f04edf51d26ecc0c2795497fb4a38c65056e1f324",
+      "contentRange": "bytes 0-2097151/77647402",
+      "etag": "\"8eb85066aa2be181bfd5634f6a01dcd3-5\""
+    },
+    {
+      "id": "imu",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/applanix/imu_raw.csv",
+      "filename": "imu.bin",
+      "byteLength": 1048576,
+      "digest": "sha256:fb3c3d17fa588fc929f5e01e76140ff12265b395ffd6d280840d6f2ce2d4d94b",
+      "contentRange": "bytes 0-1048575/21032908",
+      "etag": "\"c3893df4afb3984faa2e473bce19bf80-3\""
+    },
+    {
+      "id": "body-lidar",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/calib/T_applanix_lidar.txt",
+      "filename": "body-lidar.bin",
+      "byteLength": 401,
+      "digest": "sha256:e32772bcc7d617c62db0c3047e896e3626760d3f148fa83e26ad24b0c8f024db",
+      "contentRange": null,
+      "etag": "\"58b1bee411fc44ad5d9caf778a2e0d1e\""
+    },
+    {
+      "id": "camera-lidar",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/calib/T_camera_lidar.txt",
+      "filename": "camera-lidar.bin",
+      "byteLength": 249,
+      "digest": "sha256:6e6451f9dfabc42b1bb65e437d890a471412c62b12ad9dc995bf16b36b605bdc",
+      "contentRange": null,
+      "etag": "\"31a3ce5fd80c4dcf45915b6387e7d5c2\""
+    },
+    {
+      "id": "camera-projection",
+      "url": "https://boreas.s3.amazonaws.com/boreas-2020-11-26-13-58/calib/P_camera.txt",
+      "filename": "camera-projection.bin",
+      "byteLength": 253,
+      "digest": "sha256:1d17385929583172e63ed65b190bc9771b047ab96f8579750dab084cce24f975",
+      "contentRange": null,
+      "etag": "\"c8b92d80fefc822e186a87cfae76b0af\""
+    }
+  ]
+}

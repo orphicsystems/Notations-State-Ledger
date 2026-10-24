@@ -1,0 +1,11 @@
+import { resolve, join } from 'node:path';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { syntheticReplay } from '../src/observations/fixture';
+import { boreasReplay } from '../src/observations/boreas';
+const mode = process.argv[2] ?? 'synthetic';
+if (!['synthetic', 'boreas'].includes(mode)) throw new Error('Choose synthetic or boreas.');
+const root = resolve(process.argv[3] ?? `.payload/observation-${mode}`), output = resolve(process.argv[4] ?? `.payload/observation-${mode}-artifacts`);
+const result = mode === 'boreas' ? await boreasReplay(root, resolve(process.argv[5] ?? '.payload/boreas-slice')) : syntheticReplay(root);
+mkdirSync(output, { recursive: true });
+for (const [name, value] of Object.entries(result)) writeFileSync(join(output, `${name}.json`), JSON.stringify(value, null, 2));
+console.log(JSON.stringify({ output, coverage: result.analysis.receipt.result.coverage, fieldAccuracyEstablished: result.analysis.receipt.result.fieldAccuracyEstablished }, null, 2));

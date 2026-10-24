@@ -1,0 +1,27 @@
+{
+  "schema": "payload.observation-replay-request.v1",
+  "requestId": "synthetic-replay-1",
+  "purpose": "OBSERVATION_REPLAY",
+  "source": {
+    "acquisition": {
+      "id": "replay-synthetic-bundle",
+      "digest": "sha256:efa8398a225e14083b69fdd318cbdb3468f38fa6304c1efe6e71ceff0f2c5b8f"
+    },
+    "evidence": {
+      "id": "replay-evidence-synthetic-bundle",
+      "contentDigest": "sha256:64f2b8e1829fd723a1ed8be6e1e19005d085c0afb8b8249dcad82d595f1244da"
+    }
+  },
+  "pairs": [
+    {
+      "id": "cross-session",
+      "leftId": "lidar-A",
+      "rightId": "lidar-B"
+    },
+    {
+      "id": "cross-sensor",
+      "leftId": "lidar-A",
+      "rightId": "camera-A"
+    }
+  ]
+}

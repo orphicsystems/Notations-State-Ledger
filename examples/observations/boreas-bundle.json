@@ -1,0 +1,498 @@
+{
+  "artifacts": [
+    {
+      "id": "body-lidar",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:0c63dd41e36b8a2592f0445466b87d9b019cc47ce15f97fb9af419bcf196f18a",
+          "id": "replay-boreas-body-lidar"
+        },
+        "evidence": {
+          "contentDigest": "sha256:e32772bcc7d617c62db0c3047e896e3626760d3f148fa83e26ad24b0c8f024db",
+          "id": "replay-evidence-boreas-body-lidar"
+        }
+      },
+      "role": "CALIBRATION"
+    },
+    {
+      "id": "camera",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:7200d25aa8c6b58e380ae0aef58080ddc8e04b3d0bcd27f66f6cc8507b493270",
+          "id": "replay-boreas-camera"
+        },
+        "evidence": {
+          "contentDigest": "sha256:8f5e6782b0de5681add12101ea35e1a6c67d04bd6eef84ac19ea4e62385a037b",
+          "id": "replay-evidence-boreas-camera"
+        }
+      },
+      "role": "RAW"
+    },
+    {
+      "id": "camera-lidar",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:6670f444f735051593650e627da2ccfb40ca0a716706693fd29c9dd395c55480",
+          "id": "replay-boreas-camera-lidar"
+        },
+        "evidence": {
+          "contentDigest": "sha256:6e6451f9dfabc42b1bb65e437d890a471412c62b12ad9dc995bf16b36b605bdc",
+          "id": "replay-evidence-boreas-camera-lidar"
+        }
+      },
+      "role": "CALIBRATION"
+    },
+    {
+      "id": "camera-poses",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:06ffae1fc070e6c19892f169073da15df466e35e004bfcdd4d9597b286d88e52",
+          "id": "replay-boreas-camera-poses"
+        },
+        "evidence": {
+          "contentDigest": "sha256:9354a01ec7b99bd22513648667308c33ab41dec2646832c70f32c6dff42fd566",
+          "id": "replay-evidence-boreas-camera-poses"
+        }
+      },
+      "role": "TRAJECTORY"
+    },
+    {
+      "id": "camera-projection",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:6377154961496f0a43bd0ab09e23c4b0d28b0825599784f480f16f60dc984f33",
+          "id": "replay-boreas-camera-projection"
+        },
+        "evidence": {
+          "contentDigest": "sha256:1d17385929583172e63ed65b190bc9771b047ab96f8579750dab084cce24f975",
+          "id": "replay-evidence-boreas-camera-projection"
+        }
+      },
+      "role": "CALIBRATION"
+    },
+    {
+      "id": "derivation",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:747bf2bb81dd8fb1b8f51aad2af6f07bdc5862326f84dfea0434927e97ba2525",
+          "id": "replay-boreas-derivation"
+        },
+        "evidence": {
+          "contentDigest": "sha256:50a3c5606b84e642796808cfc17adba844d2ecb72e0091062ef97229f2042bbc",
+          "id": "replay-evidence-boreas-derivation"
+        }
+      },
+      "role": "CALIBRATION"
+    },
+    {
+      "id": "gnss",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:3a363f1ebdd70eb62bedb3c142b151a354706a7281f86ac0323900b716b31278",
+          "id": "replay-boreas-gnss"
+        },
+        "evidence": {
+          "contentDigest": "sha256:5db1ff521b0c5ce1095bfe4f04edf51d26ecc0c2795497fb4a38c65056e1f324",
+          "id": "replay-evidence-boreas-gnss"
+        }
+      },
+      "role": "RAW"
+    },
+    {
+      "id": "imu",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:fbbf797e77f8eef9e33219e0ba8d0a25ef1c9c414a7ba1e4d0ab57d4090ac087",
+          "id": "replay-boreas-imu"
+        },
+        "evidence": {
+          "contentDigest": "sha256:fb3c3d17fa588fc929f5e01e76140ff12265b395ffd6d280840d6f2ce2d4d94b",
+          "id": "replay-evidence-boreas-imu"
+        }
+      },
+      "role": "RAW"
+    },
+    {
+      "id": "lidar",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:37a40332d5fe7836a0972093a6f7f68d45d8613438e6346961f799aa6c6458a7",
+          "id": "replay-boreas-lidar"
+        },
+        "evidence": {
+          "contentDigest": "sha256:9158150711120daaa375a8d57363605eea46f906d7ae8d02e3a271e0d7ff5b05",
+          "id": "replay-evidence-boreas-lidar"
+        }
+      },
+      "role": "RAW"
+    },
+    {
+      "id": "lidar-poses",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:41c107011c39812601894db03f89a82d9e6dd92ecb365dcb56b7d51fc2231c4d",
+          "id": "replay-boreas-lidar-poses"
+        },
+        "evidence": {
+          "contentDigest": "sha256:a1040dff3b9b1515ea87dc9a74d6cfcbd13d4eeaa85f7080807b9c00eba48029",
+          "id": "replay-evidence-boreas-lidar-poses"
+        }
+      },
+      "role": "TRAJECTORY"
+    }
+  ],
+  "bodyFrame": {
+    "artifactId": "derivation",
+    "definition": "Applanix reference frame; sensor mounting rotations retained from supplied matrices.",
+    "id": "applanix"
+  },
+  "calibrations": [
+    {
+      "artifactId": "derivation",
+      "covariance": null,
+      "id": "camera-mount",
+      "intrinsics": {
+        "cx": 1218.227729041253,
+        "cy": 1045.272153129241,
+        "fx": 1440.1585693359375,
+        "fy": 1446.9215087890625,
+        "model": "RECTIFIED_PINHOLE"
+      },
+      "sensorId": "camera",
+      "sensorToBody": {
+        "rotation": [
+          [
+            0.9999506620839744,
+            -0.0006979495054143265,
+            0.009908898351579376
+          ],
+          [
+            -0.009919996458894798,
+            -0.018267443202031337,
+            0.9997839237512018
+          ],
+          [
+            -0.000516788457270013,
+            -0.999832892730255,
+            -0.018273465581034
+          ]
+        ],
+        "translationM": [
+          0.029283074380059726,
+          0.6307894261611131,
+          -0.11094706067178889
+        ]
+      },
+      "validFromReferenceNs": "1606417096502930000",
+      "validUntilReferenceNs": "1606417098547313000",
+      "version": "boreas-2020-11-26-13-58"
+    },
+    {
+      "artifactId": "derivation",
+      "covariance": null,
+      "id": "lidar-mount",
+      "intrinsics": null,
+      "sensorId": "lidar",
+      "sensorToBody": {
+        "rotation": [
+          [
+            0.7360555651493133,
+            -0.6769211217083996,
+            0
+          ],
+          [
+            0.6769211217083996,
+            0.7360555651493133,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationM": [
+          0,
+          0,
+          0.13
+        ]
+      },
+      "validFromReferenceNs": "1606417096502930000",
+      "validUntilReferenceNs": "1606417098547313000",
+      "version": "boreas-2020-11-26-13-58"
+    }
+  ],
+  "classification": "RECORDED",
+  "clocks": [
+    {
+      "artifactId": "derivation",
+      "basis": "UNIX_UTC",
+      "id": "dataset-clock",
+      "offsetToReferenceNs": "0",
+      "uncertaintyNs": null,
+      "validFromNs": "1606417096502930000",
+      "validUntilNs": "1606417098547313000"
+    }
+  ],
+  "id": "boreas-bounded-replay",
+  "observations": [
+    {
+      "artifactId": "camera",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "captureTimeNs": "1606417097547313000",
+      "clockId": "dataset-clock",
+      "gnss": null,
+      "id": "camera-frame",
+      "measurement": {
+        "kind": "CONTEXT"
+      },
+      "poseId": "camera-pose",
+      "processing": {
+        "artifactIds": [
+          "camera",
+          "derivation"
+        ],
+        "method": "BOREAS_BOUNDED_CONTEXT_ADAPTER",
+        "version": "1.0.0"
+      },
+      "selector": "camera-frame",
+      "sensorId": "camera",
+      "sessionId": "boreas-2020-11-26-13-58"
+    },
+    {
+      "artifactId": "gnss",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "captureTimeNs": "1606417097546295200",
+      "clockId": "dataset-clock",
+      "gnss": {
+        "correctionAgeSeconds": null,
+        "correctionSource": null,
+        "solutionStatus": "POST_PROCESSED"
+      },
+      "id": "gnss-context",
+      "measurement": {
+        "kind": "CONTEXT"
+      },
+      "poseId": null,
+      "processing": {
+        "artifactIds": [
+          "gnss",
+          "derivation"
+        ],
+        "method": "BOREAS_BOUNDED_CONTEXT_ADAPTER",
+        "version": "1.0.0"
+      },
+      "selector": "CSV row timestamp 1606417097.5462952; post-processed GNSS/INS solution, not raw GNSS",
+      "sensorId": "gnss",
+      "sessionId": "boreas-2020-11-26-13-58"
+    },
+    {
+      "artifactId": "imu",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "captureTimeNs": "1606417097546295200",
+      "clockId": "dataset-clock",
+      "gnss": null,
+      "id": "imu-context",
+      "measurement": {
+        "kind": "CONTEXT"
+      },
+      "poseId": null,
+      "processing": {
+        "artifactIds": [
+          "imu",
+          "derivation"
+        ],
+        "method": "BOREAS_BOUNDED_CONTEXT_ADAPTER",
+        "version": "1.0.0"
+      },
+      "selector": "CSV row timestamp 1606417097.5462952; raw IMU axes x backwards, y left, z up",
+      "sensorId": "imu",
+      "sessionId": "boreas-2020-11-26-13-58"
+    },
+    {
+      "artifactId": "lidar",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "captureTimeNs": "1606417097451171949",
+      "clockId": "dataset-clock",
+      "gnss": null,
+      "id": "lidar-point-0",
+      "measurement": {
+        "kind": "POINT3D",
+        "pointM": [
+          -3.7371323108673096,
+          2.384852170944214,
+          -0.9214709401130676
+        ]
+      },
+      "poseId": "lidar-pose",
+      "processing": {
+        "artifactIds": [
+          "lidar",
+          "derivation"
+        ],
+        "method": "BOREAS_BOUNDED_CONTEXT_ADAPTER",
+        "version": "1.0.0"
+      },
+      "selector": "float32 little-endian row 0; XYZ fields 0..2; per-point seconds offset field 5 rounded to nanoseconds",
+      "sensorId": "lidar",
+      "sessionId": "boreas-2020-11-26-13-58"
+    },
+    {
+      "artifactId": "lidar",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "captureTimeNs": "1606417097502930000",
+      "clockId": "dataset-clock",
+      "gnss": null,
+      "id": "lidar-scan",
+      "measurement": {
+        "kind": "CONTEXT"
+      },
+      "poseId": "lidar-pose",
+      "processing": {
+        "artifactIds": [
+          "lidar",
+          "derivation"
+        ],
+        "method": "BOREAS_BOUNDED_CONTEXT_ADAPTER",
+        "version": "1.0.0"
+      },
+      "selector": "lidar-scan",
+      "sensorId": "lidar",
+      "sessionId": "boreas-2020-11-26-13-58"
+    }
+  ],
+  "poses": [
+    {
+      "artifactId": "camera-poses",
+      "bodyToWorld": {
+        "rotation": [
+          [
+            0.2066737255371266,
+            0.9783449618272577,
+            -0.011274167022823332
+          ],
+          [
+            -0.9782339447309302,
+            0.20640429805192506,
+            -0.021345142868762594
+          ],
+          [
+            -0.018555876454670894,
+            0.01544025307910127,
+            0.9997085965589443
+          ]
+        ],
+        "translationM": [
+          0.000011821292375202574,
+          -0.000012614655444706524,
+          0.000030179414970051997
+        ]
+      },
+      "covariance": null,
+      "id": "camera-pose",
+      "referenceTimeNs": "1606417097547313000",
+      "sessionId": "boreas-2020-11-26-13-58",
+      "velocityWorldMps": null
+    },
+    {
+      "artifactId": "lidar-poses",
+      "bodyToWorld": {
+        "rotation": [
+          [
+            0.2066798305737827,
+            0.9783437734544906,
+            -0.011265370790768097
+          ],
+          [
+            -0.9782327857173905,
+            0.20641070159739788,
+            -0.02133633557797587
+          ],
+          [
+            -0.01854897797237094,
+            0.015429945273113824,
+            0.9997088837281833
+          ]
+        ],
+        "translationM": [
+          0.000011221099572224658,
+          -0.00001257075732266806,
+          0.000030257529248373105
+        ]
+      },
+      "covariance": null,
+      "id": "lidar-pose",
+      "referenceTimeNs": "1606417097502930000",
+      "sessionId": "boreas-2020-11-26-13-58",
+      "velocityWorldMps": null
+    }
+  ],
+  "referenceClock": {
+    "basis": "UNIX_UTC",
+    "definition": "Dataset documentation declares Unix UTC timestamps. Sensor pose timestamps are microseconds; gps_post_process and imu_raw timestamps are decimal seconds despite the GPSTime column label.",
+    "id": "boreas-utc"
+  },
+  "schema": "payload.observation-bundle.v1",
+  "sensors": [
+    {
+      "calibrationId": "camera-mount",
+      "definition": "Boreas CAMERA frame; see exact calibration and derivation artifacts.",
+      "frameId": "camera-frame",
+      "id": "camera",
+      "modality": "CAMERA"
+    },
+    {
+      "calibrationId": null,
+      "definition": "Boreas GNSS frame; see exact calibration and derivation artifacts.",
+      "frameId": "gnss-frame",
+      "id": "gnss",
+      "modality": "GNSS"
+    },
+    {
+      "calibrationId": null,
+      "definition": "Raw IMU body: x backwards, y left, z up; mounting relation unresolved.",
+      "frameId": "imu-frame",
+      "id": "imu",
+      "modality": "IMU"
+    },
+    {
+      "calibrationId": "lidar-mount",
+      "definition": "Boreas LIDAR frame; see exact calibration and derivation artifacts.",
+      "frameId": "lidar-frame",
+      "id": "lidar",
+      "modality": "LIDAR"
+    }
+  ],
+  "worldFrame": {
+    "artifactId": "derivation",
+    "axes": "RIGHT_HANDED",
+    "definition": "Boreas ENU_ref, shared dataset reference; this adapter does not independently reconstruct its geographic datum.",
+    "id": "boreas-enu-ref",
+    "units": "m"
+  }
+}

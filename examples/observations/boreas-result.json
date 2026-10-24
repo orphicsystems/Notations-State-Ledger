@@ -1,0 +1,263 @@
+{
+  "bundleDigest": "sha256:3c9e0c0d59868950b0bd4e8b87de6369d01704ae40ebaab94dd9e1a0edcd9e13",
+  "classification": "RECORDED",
+  "comparisons": [
+    {
+      "calibratedAccuracyEstablished": false,
+      "crossSession": false,
+      "id": "unannotated-cross-sensor",
+      "interpretation": "CONDITIONAL_ON_DECLARED_STATIC_ASSOCIATION_AND_CALIBRATION",
+      "leftId": "lidar-point-0",
+      "objectId": null,
+      "reasons": [
+        "STATIC_CORRESPONDENCE_UNRESOLVED",
+        "CAPTURE_POSE_ALIGNMENT_UNRESOLVED"
+      ],
+      "residual": null,
+      "rightId": "camera-frame",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "coverage": {
+    "aligned": 2,
+    "compared": 0,
+    "observations": 5
+  },
+  "digest": "sha256:d222d76f2966ab4eabcee6283037414fd93467593e8d8008647da0ab7934d86e",
+  "fieldAccuracyEstablished": false,
+  "frame": {
+    "artifactId": "derivation",
+    "axes": "RIGHT_HANDED",
+    "definition": "Boreas ENU_ref, shared dataset reference; this adapter does not independently reconstruct its geographic datum.",
+    "id": "boreas-enu-ref",
+    "units": "m"
+  },
+  "method": {
+    "comparison": "DECLARED_STATIC_CORRESPONDENCE",
+    "id": "explicit-pose-observation-replay",
+    "timing": "EXACT_DECLARED_CAPTURE_POSE_ONLY",
+    "transform": "COLUMN_VECTOR_WORLD_FROM_BODY_FROM_SENSOR",
+    "uncertainty": "PRESERVED_NOT_FUSED",
+    "version": "1.0.0"
+  },
+  "parameters": {
+    "pairs": [
+      {
+        "id": "unannotated-cross-sensor",
+        "leftId": "lidar-point-0",
+        "rightId": "camera-frame"
+      }
+    ]
+  },
+  "physicalActionAuthorized": false,
+  "readings": [
+    {
+      "alignment": "DECLARED_POSE_AT_CAPTURE",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "calibrationId": "camera-mount",
+      "calibrationVersion": "boreas-2020-11-26-13-58",
+      "clockId": "dataset-clock",
+      "gnss": null,
+      "id": "camera-frame",
+      "modality": "CAMERA",
+      "pointWorldM": null,
+      "poseId": "camera-pose",
+      "rawArtifactId": "camera",
+      "reasons": [],
+      "referenceTimeNs": "1606417097547313000",
+      "selector": "camera-frame",
+      "sensorId": "camera",
+      "sessionId": "boreas-2020-11-26-13-58",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": null,
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": null,
+        "unknowns": [
+          "CLOCK_UNCERTAINTY_UNKNOWN",
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    },
+    {
+      "alignment": "UNRESOLVED",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "calibrationId": null,
+      "calibrationVersion": null,
+      "clockId": "dataset-clock",
+      "gnss": {
+        "correctionAgeSeconds": null,
+        "correctionSource": null,
+        "solutionStatus": "POST_PROCESSED"
+      },
+      "id": "gnss-context",
+      "modality": "GNSS",
+      "pointWorldM": null,
+      "poseId": null,
+      "rawArtifactId": "gnss",
+      "reasons": [
+        "MOUNT_CALIBRATION_UNKNOWN",
+        "POSE_UNAVAILABLE"
+      ],
+      "referenceTimeNs": "1606417097546295200",
+      "selector": "CSV row timestamp 1606417097.5462952; post-processed GNSS/INS solution, not raw GNSS",
+      "sensorId": "gnss",
+      "sessionId": "boreas-2020-11-26-13-58",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": null,
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": null,
+        "unknowns": [
+          "CLOCK_UNCERTAINTY_UNKNOWN",
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    },
+    {
+      "alignment": "UNRESOLVED",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "calibrationId": null,
+      "calibrationVersion": null,
+      "clockId": "dataset-clock",
+      "gnss": null,
+      "id": "imu-context",
+      "modality": "IMU",
+      "pointWorldM": null,
+      "poseId": null,
+      "rawArtifactId": "imu",
+      "reasons": [
+        "MOUNT_CALIBRATION_UNKNOWN",
+        "POSE_UNAVAILABLE"
+      ],
+      "referenceTimeNs": "1606417097546295200",
+      "selector": "CSV row timestamp 1606417097.5462952; raw IMU axes x backwards, y left, z up",
+      "sensorId": "imu",
+      "sessionId": "boreas-2020-11-26-13-58",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": null,
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": null,
+        "unknowns": [
+          "CLOCK_UNCERTAINTY_UNKNOWN",
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    },
+    {
+      "alignment": "UNRESOLVED",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "calibrationId": "lidar-mount",
+      "calibrationVersion": "boreas-2020-11-26-13-58",
+      "clockId": "dataset-clock",
+      "gnss": null,
+      "id": "lidar-point-0",
+      "modality": "LIDAR",
+      "pointWorldM": null,
+      "poseId": "lidar-pose",
+      "rawArtifactId": "lidar",
+      "reasons": [
+        "POSE_NOT_AT_CAPTURE_TIME"
+      ],
+      "referenceTimeNs": "1606417097451171949",
+      "selector": "float32 little-endian row 0; XYZ fields 0..2; per-point seconds offset field 5 rounded to nanoseconds",
+      "sensorId": "lidar",
+      "sessionId": "boreas-2020-11-26-13-58",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": null,
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": null,
+        "unknowns": [
+          "CLOCK_UNCERTAINTY_UNKNOWN",
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    },
+    {
+      "alignment": "DECLARED_POSE_AT_CAPTURE",
+      "association": {
+        "artifactId": null,
+        "objectId": null,
+        "probability": null,
+        "status": "UNKNOWN"
+      },
+      "calibrationId": "lidar-mount",
+      "calibrationVersion": "boreas-2020-11-26-13-58",
+      "clockId": "dataset-clock",
+      "gnss": null,
+      "id": "lidar-scan",
+      "modality": "LIDAR",
+      "pointWorldM": null,
+      "poseId": "lidar-pose",
+      "rawArtifactId": "lidar",
+      "reasons": [],
+      "referenceTimeNs": "1606417097502930000",
+      "selector": "lidar-scan",
+      "sensorId": "lidar",
+      "sessionId": "boreas-2020-11-26-13-58",
+      "uncertainty": {
+        "calibrationCovariance": null,
+        "clockUncertaintyNs": null,
+        "poseCovariance": null,
+        "propagatedCovariance": null,
+        "timingInterpretation": "TRANSLATION_ONLY_SENSITIVITY_NOT_ERROR_BOUND",
+        "timingSensitivityM": null,
+        "unknowns": [
+          "CLOCK_UNCERTAINTY_UNKNOWN",
+          "POSE_COVARIANCE_UNKNOWN",
+          "MOUNT_COVARIANCE_UNKNOWN",
+          "MEASUREMENT_COVARIANCE_NOT_SUPPLIED",
+          "CROSS_CORRELATIONS_NOT_MODELED"
+        ]
+      }
+    }
+  ],
+  "referenceClock": {
+    "basis": "UNIX_UTC",
+    "definition": "Dataset documentation declares Unix UTC timestamps. Sensor pose timestamps are microseconds; gps_post_process and imu_raw timestamps are decimal seconds despite the GPSTime column label.",
+    "id": "boreas-utc"
+  },
+  "schema": "payload.observation-replay-result.v1"
+}

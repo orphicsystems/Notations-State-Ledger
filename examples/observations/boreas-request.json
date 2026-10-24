@@ -1,0 +1,22 @@
+{
+  "schema": "payload.observation-replay-request.v1",
+  "requestId": "boreas-bounded-replay-1",
+  "purpose": "OBSERVATION_REPLAY",
+  "source": {
+    "acquisition": {
+      "id": "replay-boreas-bundle",
+      "digest": "sha256:29aa91c8b1b4bdccb37e88cdf579689c005ca998e9208c4d3cb6d70845ac270f"
+    },
+    "evidence": {
+      "id": "replay-evidence-boreas-bundle",
+      "contentDigest": "sha256:d10d588811498e6c78d9443b4813ca9cd0e32d57875a4f758a6f1e58ee84915e"
+    }
+  },
+  "pairs": [
+    {
+      "id": "unannotated-cross-sensor",
+      "leftId": "lidar-point-0",
+      "rightId": "camera-frame"
+    }
+  ]
+}
