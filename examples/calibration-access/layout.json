@@ -1,0 +1,217 @@
+{
+  "floorId": "floor-1",
+  "frame": {
+    "axes": "X_RIGHT_Y_UP",
+    "id": "plan-frame",
+    "origin": [
+      0,
+      0
+    ],
+    "parentFrame": null,
+    "units": "m"
+  },
+  "id": "demo-floor",
+  "label": "Synthetic single-floor access example",
+  "passages": [
+    {
+      "conditions": [],
+      "direction": "BOTH",
+      "from": "S-1",
+      "id": "P-01",
+      "provenance": {
+        "author": "NotationsOS demonstration fixture",
+        "kind": "MANUAL_ANNOTATION",
+        "note": "Synthetic declared connections; no measured building or polygon inference.",
+        "sourceIds": [
+          "plan"
+        ]
+      },
+      "state": "OPEN",
+      "to": "S-2"
+    },
+    {
+      "conditions": [],
+      "direction": "BOTH",
+      "from": "S-2",
+      "id": "P-07",
+      "provenance": {
+        "author": "NotationsOS demonstration fixture",
+        "kind": "MANUAL_ANNOTATION",
+        "note": "Synthetic declared connections; no measured building or polygon inference.",
+        "sourceIds": [
+          "plan"
+        ]
+      },
+      "state": "OPEN",
+      "to": "S-3"
+    },
+    {
+      "conditions": [],
+      "direction": "BOTH",
+      "from": "S-3",
+      "id": "P-08",
+      "provenance": {
+        "author": "NotationsOS demonstration fixture",
+        "kind": "MANUAL_ANNOTATION",
+        "note": "Synthetic declared connections; no measured building or polygon inference.",
+        "sourceIds": [
+          "plan"
+        ]
+      },
+      "state": "OPEN",
+      "to": "S-4"
+    },
+    {
+      "conditions": [],
+      "direction": "BOTH",
+      "from": "S-4",
+      "id": "P-09",
+      "provenance": {
+        "author": "NotationsOS demonstration fixture",
+        "kind": "MANUAL_ANNOTATION",
+        "note": "Synthetic declared connections; no measured building or polygon inference.",
+        "sourceIds": [
+          "plan"
+        ]
+      },
+      "state": "UNKNOWN",
+      "to": "S-5"
+    }
+  ],
+  "provenance": {
+    "author": "NotationsOS demonstration fixture",
+    "kind": "MANUAL_ANNOTATION",
+    "note": "Synthetic declared connections; no measured building or polygon inference.",
+    "sourceIds": [
+      "plan"
+    ]
+  },
+  "schema": "payload.spatial-layout.v1",
+  "sourceArtifacts": [
+    {
+      "id": "plan",
+      "reference": {
+        "acquisition": {
+          "digest": "sha256:e176383db97a16243701fee2ac651a72a52fdfe3bbdb7098179686ec4937fde6",
+          "id": "spatial-demo-plan"
+        },
+        "evidence": {
+          "contentDigest": "sha256:a2142cf576d450547b8bce5b9be241d76860007a04b7894742a638c5495f70e0",
+          "id": "spatial-evidence-plan"
+        }
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "S-1",
+      "label": "Entrance",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "S-2",
+      "label": "Hall",
+      "polygon": [
+        [
+          5,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "S-3",
+      "label": "Studio",
+      "polygon": [
+        [
+          10,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          10,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "S-4",
+      "label": "Office",
+      "polygon": [
+        [
+          15,
+          0
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          19,
+          4
+        ],
+        [
+          15,
+          4
+        ]
+      ]
+    },
+    {
+      "id": "S-5",
+      "label": "Store",
+      "polygon": [
+        [
+          20,
+          0
+        ],
+        [
+          24,
+          0
+        ],
+        [
+          24,
+          4
+        ],
+        [
+          20,
+          4
+        ]
+      ]
+    }
+  ]
+}

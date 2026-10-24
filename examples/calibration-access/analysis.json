@@ -1,0 +1,2018 @@
+{
+  "status": "CREATED",
+  "receipt": {
+    "completedAt": "2026-09-05T12:30:00.000Z",
+    "decisions": [
+      {
+        "decisionId": "source-use:calibration-access-demo:derive",
+        "evaluatedAt": "2026-09-05T12:30:00.000Z",
+        "reasons": [
+          "EXPLICIT_POLICY_GRANT"
+        ],
+        "registrationId": "calibration-policy-experiment",
+        "request": {
+          "audience": "INTERNAL",
+          "operation": "DERIVE",
+          "purpose": "SPATIAL_INQUIRY",
+          "requestedAt": "2026-09-05T12:30:00.000Z"
+        },
+        "requestId": "calibration-access-demo:derive",
+        "sourceId": "notation://source/calibration/experiment",
+        "state": "ALLOWED"
+      },
+      {
+        "decisionId": "source-use:calibration-access-demo:derive",
+        "evaluatedAt": "2026-09-05T12:30:00.000Z",
+        "reasons": [
+          "EXPLICIT_POLICY_GRANT"
+        ],
+        "registrationId": "spatial-policy-layout",
+        "request": {
+          "audience": "INTERNAL",
+          "operation": "DERIVE",
+          "purpose": "SPATIAL_INQUIRY",
+          "requestedAt": "2026-09-05T12:30:00.000Z"
+        },
+        "requestId": "calibration-access-demo:derive",
+        "sourceId": "notation://source/spatial/layout",
+        "state": "ALLOWED"
+      },
+      {
+        "decisionId": "source-use:calibration-access-demo:derive",
+        "evaluatedAt": "2026-09-05T12:30:00.000Z",
+        "reasons": [
+          "EXPLICIT_POLICY_GRANT"
+        ],
+        "registrationId": "spatial-policy-plan",
+        "request": {
+          "audience": "INTERNAL",
+          "operation": "DERIVE",
+          "purpose": "SPATIAL_INQUIRY",
+          "requestedAt": "2026-09-05T12:30:00.000Z"
+        },
+        "requestId": "calibration-access-demo:derive",
+        "sourceId": "notation://source/spatial/plan",
+        "state": "ALLOWED"
+      },
+      {
+        "decisionId": "source-use:calibration-access-demo:derive",
+        "evaluatedAt": "2026-09-05T12:30:00.000Z",
+        "reasons": [
+          "EXPLICIT_POLICY_GRANT"
+        ],
+        "registrationId": "calibration-policy-controls",
+        "request": {
+          "audience": "INTERNAL",
+          "operation": "DERIVE",
+          "purpose": "SPATIAL_INQUIRY",
+          "requestedAt": "2026-09-05T12:30:00.000Z"
+        },
+        "requestId": "calibration-access-demo:derive",
+        "sourceId": "notation://source/calibration/controls",
+        "state": "ALLOWED"
+      },
+      {
+        "decisionId": "source-use:calibration-access-demo:derive",
+        "evaluatedAt": "2026-09-05T12:30:00.000Z",
+        "reasons": [
+          "EXPLICIT_POLICY_GRANT"
+        ],
+        "registrationId": "calibration-policy-covariance",
+        "request": {
+          "audience": "INTERNAL",
+          "operation": "DERIVE",
+          "purpose": "SPATIAL_INQUIRY",
+          "requestedAt": "2026-09-05T12:30:00.000Z"
+        },
+        "requestId": "calibration-access-demo:derive",
+        "sourceId": "notation://source/calibration/covariance",
+        "state": "ALLOWED"
+      },
+      {
+        "decisionId": "source-use:calibration-access-demo:derive",
+        "evaluatedAt": "2026-09-05T12:30:00.000Z",
+        "reasons": [
+          "EXPLICIT_POLICY_GRANT"
+        ],
+        "registrationId": "calibration-policy-model",
+        "request": {
+          "audience": "INTERNAL",
+          "operation": "DERIVE",
+          "purpose": "SPATIAL_INQUIRY",
+          "requestedAt": "2026-09-05T12:30:00.000Z"
+        },
+        "requestId": "calibration-access-demo:derive",
+        "sourceId": "notation://source/calibration/model",
+        "state": "ALLOWED"
+      },
+      {
+        "decisionId": "source-use:calibration-access-demo:derive",
+        "evaluatedAt": "2026-09-05T12:30:00.000Z",
+        "reasons": [
+          "EXPLICIT_POLICY_GRANT"
+        ],
+        "registrationId": "calibration-policy-walking-lengths",
+        "request": {
+          "audience": "INTERNAL",
+          "operation": "DERIVE",
+          "purpose": "SPATIAL_INQUIRY",
+          "requestedAt": "2026-09-05T12:30:00.000Z"
+        },
+        "requestId": "calibration-access-demo:derive",
+        "sourceId": "notation://source/calibration/walking-lengths",
+        "state": "ALLOWED"
+      }
+    ],
+    "digest": "sha256:6725ea1f9f375435739e297240e615b63870a33e0e1d6cc12d7113addfc0547d",
+    "request": {
+      "purpose": "SPATIAL_INQUIRY",
+      "requestId": "calibration-access-demo",
+      "schema": "payload.calibration-access-request.v1",
+      "source": {
+        "acquisition": {
+          "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+          "id": "calibration-experiment"
+        },
+        "evidence": {
+          "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+          "id": "calibration-evidence-experiment"
+        }
+      }
+    },
+    "reservationDigest": "sha256:438e15c5a965fa4878074ed1de40c6fb6cb14a70ab64b92b67862eefd1e512fc",
+    "result": {
+      "baseline": {
+        "classification": "SYNTHETIC",
+        "coverage": {
+          "unknownAccessPassageIds": [
+            "P-09"
+          ],
+          "unknownLengthPassageIds": []
+        },
+        "digest": "sha256:44b74e34112ebcdb743da4f9c1a3f90183116c604dfb9b5ecc8ee92834ffb1a2",
+        "euclidean": {
+          "anchors": [
+            {
+              "pointM": [
+                1.9999534037172224,
+                2.000049647367574,
+                -0.00006070380404699094
+              ],
+              "spaceId": "S-1"
+            },
+            {
+              "pointM": [
+                16.99995326790339,
+                1.9987727362499994,
+                0.00150259809212977
+              ],
+              "spaceId": "S-4"
+            }
+          ],
+          "distanceM": 14.999999999999996,
+          "model": "LOCAL_CARTESIAN_3D"
+        },
+        "fieldAccuracyEstablished": false,
+        "frameId": "plan-frame",
+        "interpretation": "DECLARED_LENGTHS_AND_ACCESS; NOT_TRAVEL_TIME_OR_EVACUATION_COMPLIANCE",
+        "layoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+        "method": {
+          "euclidean": "LOCAL_CARTESIAN_3D",
+          "id": "explicit-local-access-distance",
+          "network": "DIJKSTRA_DIRECTED_NONNEGATIVE_METRES",
+          "tieBreak": "STABLE_SPACE_AND_PASSAGE_ID_ORDER",
+          "unknownAccess": "CONFIRMED_AND_POSSIBLE",
+          "unknownLengths": "REFUSE_WEIGHTED_PATHS",
+          "version": "1.0.0"
+        },
+        "metricDigest": "sha256:597df63926d244dcd37a8981b0024710e7399bd3824a8f2f9d3b56c40952be5b",
+        "metricEvidence": {
+          "acquisition": {
+            "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+            "id": "calibration-experiment"
+          },
+          "evidence": {
+            "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+            "id": "calibration-evidence-experiment"
+          }
+        },
+        "network": {
+          "confirmed": {
+            "lengthM": 24,
+            "passageIds": [
+              "P-01",
+              "P-07",
+              "P-08"
+            ],
+            "spaceIds": [
+              "S-1",
+              "S-2",
+              "S-3",
+              "S-4"
+            ]
+          },
+          "model": "SHORTEST_PERMITTED_NETWORK_LENGTH",
+          "possible": {
+            "lengthM": 24,
+            "passageIds": [
+              "P-01",
+              "P-07",
+              "P-08"
+            ],
+            "spaceIds": [
+              "S-1",
+              "S-2",
+              "S-3",
+              "S-4"
+            ]
+          },
+          "status": "CONFIRMED_ROUTE"
+        },
+        "parameters": {
+          "fromId": "S-1",
+          "toId": "S-4"
+        },
+        "scenarioDigest": null,
+        "schema": "payload.access-distance-result.v1",
+        "source": {
+          "acquisition": {
+            "digest": "sha256:e9ce7601eb31c37f9c3352327c0d25d747da9ac92c2db291bc59b7cc07d190ef",
+            "id": "spatial-demo-layout"
+          },
+          "evidence": {
+            "contentDigest": "sha256:ccb47f376511e7e38c478a17e5e215277a403c5da471f9234b1f062d3eb56fcc",
+            "id": "spatial-evidence-layout"
+          }
+        },
+        "topologicalReachability": {
+          "rootSpaceId": "S-1",
+          "spaces": [
+            {
+              "id": "S-1",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-2",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-3",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-4",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-5",
+              "status": "POSSIBLE_ONLY"
+            }
+          ]
+        },
+        "uncertaintyPropagated": false,
+        "units": "m"
+      },
+      "canonicalAdmission": false,
+      "digest": "sha256:830fa28b657ff05df5ce5c5a9f8b4860a4160af3aa0360febeefce032906ee38",
+      "fieldAccuracyEstablished": false,
+      "heldOutCheck": {
+        "independentAccuracyEstablished": false,
+        "limitM": 0.01,
+        "rmsM": 0.020017480703395134,
+        "status": "OUTSIDE_DECLARED_TOLERANCE"
+      },
+      "inputDigest": "sha256:f21ccec63efdadc81380d18c3e6ea94e69fa8771ef4aa46682881bce3cf72165",
+      "layoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+      "method": {
+        "accuracy": "NO_AUTOMATIC_FIELD_ACCURACY_CLAIM",
+        "distance": {
+          "euclidean": "LOCAL_CARTESIAN_3D",
+          "id": "explicit-local-access-distance",
+          "network": "DIJKSTRA_DIRECTED_NONNEGATIVE_METRES",
+          "tieBreak": "STABLE_SPACE_AND_PASSAGE_ID_ORDER",
+          "unknownAccess": "CONFIRMED_AND_POSSIBLE",
+          "unknownLengths": "REFUSE_WEIGHTED_PATHS",
+          "version": "1.0.0"
+        },
+        "id": "calibration-access-experiment",
+        "registration": {
+          "covariance": "LOCAL_GAUSSIAN_FIXED_SOURCE_ABSOLUTE_NOISE",
+          "id": "dense-weighted-rigid-registration",
+          "loss": "SQUARED",
+          "maxIterations": 40,
+          "perturbation": "REFERENCE_TRANSLATION_XYZ_AND_LEFT_ROTATION_XYZ",
+          "rankTolerance": 1e-8,
+          "rotationStepToleranceRad": 1e-8,
+          "solver": "GAUSS_NEWTON_BACKTRACKING_WHITENED_REORTHOGONALIZED_QR",
+          "translationStepToleranceM": 1e-8,
+          "version": "1.0.0"
+        },
+        "version": "1.0.0"
+      },
+      "metric": {
+        "anchors": [
+          {
+            "pointM": [
+              1.9999534037172224,
+              2.000049647367574,
+              -0.00006070380404699094
+            ],
+            "spaceId": "S-1"
+          },
+          {
+            "pointM": [
+              6.9999533584459455,
+              1.9996240103283827,
+              0.00046039682801196635
+            ],
+            "spaceId": "S-2"
+          },
+          {
+            "pointM": [
+              11.999953313174666,
+              1.999198373289191,
+              0.0009814974600708681
+            ],
+            "spaceId": "S-3"
+          },
+          {
+            "pointM": [
+              16.99995326790339,
+              1.9987727362499994,
+              0.00150259809212977
+            ],
+            "spaceId": "S-4"
+          },
+          {
+            "pointM": [
+              21.999953222632115,
+              1.9983470992108079,
+              0.0020236987241887827
+            ],
+            "spaceId": "S-5"
+          }
+        ],
+        "classification": "SYNTHETIC",
+        "evidence": {
+          "acquisition": {
+            "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+            "id": "calibration-experiment"
+          },
+          "evidence": {
+            "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+            "id": "calibration-evidence-experiment"
+          }
+        },
+        "frameId": "plan-frame",
+        "layoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+        "passages": [
+          {
+            "lengthM": 7,
+            "passageId": "P-01"
+          },
+          {
+            "lengthM": 9,
+            "passageId": "P-07"
+          },
+          {
+            "lengthM": 8,
+            "passageId": "P-08"
+          },
+          {
+            "lengthM": 10,
+            "passageId": "P-09"
+          }
+        ],
+        "schema": "payload.access-metric.v1",
+        "units": "m"
+      },
+      "registration": {
+        "canonicalAdmission": false,
+        "classification": "SYNTHETIC",
+        "covariance": {
+          "convention": "REFERENCE_TRANSLATION_XYZ_AND_LEFT_ROTATION_XYZ",
+          "interpretation": "LOCAL_APPROXIMATION_CONDITIONAL_ON_SUPPLIED_ABSOLUTE_COVARIANCE",
+          "matrix": [
+            [
+              0.0000405997480250743,
+              -0.000004425412389137974,
+              -0.000005845952171558868,
+              9.479514195018849e-7,
+              -0.000008141955874464236,
+              0.000008855232746217863
+            ],
+            [
+              -0.000004425412389137974,
+              0.000031323037027296375,
+              -0.00000718690919683263,
+              0.000006074855026581293,
+              -4.5770427376278855e-7,
+              -0.000004207027417918661
+            ],
+            [
+              -0.000005845952171558868,
+              -0.00000718690919683263,
+              0.00003850858749664892,
+              -0.000009341662818089137,
+              0.000006608977395926183,
+              -4.902471457390965e-7
+            ],
+            [
+              9.479514195018849e-7,
+              0.000006074855026581293,
+              -0.000009341662818089137,
+              0.000007944527743267703,
+              -5.00898058825168e-7,
+              4.804437227549073e-7
+            ],
+            [
+              -0.000008141955874464236,
+              -4.5770427376278855e-7,
+              0.000006608977395926183,
+              -5.00898058825168e-7,
+              0.000010315176064446624,
+              9.72934598247965e-8
+            ],
+            [
+              0.000008855232746217863,
+              -0.000004207027417918661,
+              -4.902471457390965e-7,
+              4.804437227549073e-7,
+              9.72934598247965e-8,
+              0.000007843237368756276
+            ]
+          ],
+          "units": "m_and_rad"
+        },
+        "digest": "sha256:96fedf000bae8248bc7f66bf2797ec6aa46aa5242a7300d925d7c1a353920663",
+        "fieldAccuracyEstablished": false,
+        "fit": {
+          "residuals": [
+            {
+              "distanceM": 0.0010166200343734112,
+              "id": "C-0",
+              "vectorM": [
+                -0.0010135789170495624,
+                0.00004971782091001131,
+                -0.000060845800890385604
+              ]
+            },
+            {
+              "distanceM": 0.0010368927444645351,
+              "id": "C-1",
+              "vectorM": [
+                0.0010202277516504488,
+                -0.00011714467334789092,
+                0.0001433841825017046
+              ]
+            },
+            {
+              "distanceM": 0.00030761469119169557,
+              "id": "C-2",
+              "vectorM": [
+                -0.00026328189476054753,
+                0.00010044378298346146,
+                -0.00012337134427503615
+              ]
+            },
+            {
+              "distanceM": 0.0002889261183872984,
+              "id": "C-3",
+              "vectorM": [
+                0.0002779808545951834,
+                0.00005001412764871205,
+                -0.00006085666274469048
+              ]
+            },
+            {
+              "distanceM": 0.00013300625883308468,
+              "id": "C-4",
+              "vectorM": [
+                -0.000021347795178261464,
+                -0.00008303105855933524,
+                0.00010168962505741064
+              ]
+            }
+          ],
+          "rmsM": 0.0006788900681000832,
+          "weightedSquaredResidual": 0.02304458622824679
+        },
+        "heldOut": {
+          "independence": "SYNTHETIC",
+          "residuals": [
+            {
+              "distanceM": 0.020017480703395134,
+              "id": "H-1",
+              "vectorM": [
+                -0.02001746335611365,
+                -0.000016656618824661962,
+                0.00002042191208362354
+              ]
+            }
+          ],
+          "rmsM": 0.020017480703395134,
+          "usedForEstimation": false
+        },
+        "inputDigest": "sha256:bd43ab7592784b95c72444bf87d4df820162b5af32919b234e54fac2e648f0ae",
+        "iterations": 3,
+        "method": {
+          "covariance": "LOCAL_GAUSSIAN_FIXED_SOURCE_ABSOLUTE_NOISE",
+          "id": "dense-weighted-rigid-registration",
+          "loss": "SQUARED",
+          "maxIterations": 40,
+          "perturbation": "REFERENCE_TRANSLATION_XYZ_AND_LEFT_ROTATION_XYZ",
+          "rankTolerance": 1e-8,
+          "rotationStepToleranceRad": 1e-8,
+          "solver": "GAUSS_NEWTON_BACKTRACKING_WHITENED_REORTHOGONALIZED_QR",
+          "translationStepToleranceM": 1e-8,
+          "version": "1.0.0"
+        },
+        "referenceFrameId": "plan-frame",
+        "schema": "payload.rigid-registration-result.v1",
+        "sourceFrameId": "scan-fixture",
+        "status": "LOCAL_STATIONARY",
+        "transform": {
+          "rotation": [
+            [
+              0.9800834811755917,
+              -0.19858589845429814,
+              -0.00010422011417751388
+            ],
+            [
+              0.19858589954793232,
+              0.980083486495266,
+              1.4815336938375291e-7
+            ],
+            [
+              0.00010211499169606285,
+              -0.000020841847794885475,
+              0.9999999945690728
+            ]
+          ],
+          "translationM": [
+            1.9999864210829503,
+            3.00004971782091,
+            0.4999391541991096
+          ]
+        },
+        "units": "m"
+      },
+      "scenario": {
+        "classification": "SYNTHETIC",
+        "coverage": {
+          "unknownAccessPassageIds": [
+            "P-09"
+          ],
+          "unknownLengthPassageIds": []
+        },
+        "digest": "sha256:4d843337d22480087919554ada37644006f37ac3e60f9fea74349ddb3c12abf8",
+        "euclidean": {
+          "anchors": [
+            {
+              "pointM": [
+                1.9999534037172224,
+                2.000049647367574,
+                -0.00006070380404699094
+              ],
+              "spaceId": "S-1"
+            },
+            {
+              "pointM": [
+                16.99995326790339,
+                1.9987727362499994,
+                0.00150259809212977
+              ],
+              "spaceId": "S-4"
+            }
+          ],
+          "distanceM": 14.999999999999996,
+          "model": "LOCAL_CARTESIAN_3D"
+        },
+        "fieldAccuracyEstablished": false,
+        "frameId": "plan-frame",
+        "interpretation": "DECLARED_LENGTHS_AND_ACCESS; NOT_TRAVEL_TIME_OR_EVACUATION_COMPLIANCE",
+        "layoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+        "method": {
+          "euclidean": "LOCAL_CARTESIAN_3D",
+          "id": "explicit-local-access-distance",
+          "network": "DIJKSTRA_DIRECTED_NONNEGATIVE_METRES",
+          "tieBreak": "STABLE_SPACE_AND_PASSAGE_ID_ORDER",
+          "unknownAccess": "CONFIRMED_AND_POSSIBLE",
+          "unknownLengths": "REFUSE_WEIGHTED_PATHS",
+          "version": "1.0.0"
+        },
+        "metricDigest": "sha256:597df63926d244dcd37a8981b0024710e7399bd3824a8f2f9d3b56c40952be5b",
+        "metricEvidence": {
+          "acquisition": {
+            "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+            "id": "calibration-experiment"
+          },
+          "evidence": {
+            "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+            "id": "calibration-evidence-experiment"
+          }
+        },
+        "network": {
+          "confirmed": null,
+          "model": "SHORTEST_PERMITTED_NETWORK_LENGTH",
+          "possible": null,
+          "status": "DISCONNECTED"
+        },
+        "parameters": {
+          "fromId": "S-1",
+          "toId": "S-4"
+        },
+        "scenarioDigest": "sha256:1ac2be14e5fcf909ef994799390582f60ce3bd141262fb158a67e7cf8dd8c522",
+        "schema": "payload.access-distance-result.v1",
+        "source": {
+          "acquisition": {
+            "digest": "sha256:e9ce7601eb31c37f9c3352327c0d25d747da9ac92c2db291bc59b7cc07d190ef",
+            "id": "spatial-demo-layout"
+          },
+          "evidence": {
+            "contentDigest": "sha256:ccb47f376511e7e38c478a17e5e215277a403c5da471f9234b1f062d3eb56fcc",
+            "id": "spatial-evidence-layout"
+          }
+        },
+        "topologicalReachability": {
+          "rootSpaceId": "S-1",
+          "spaces": [
+            {
+              "id": "S-1",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-2",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-3",
+              "status": "DISCONNECTED"
+            },
+            {
+              "id": "S-4",
+              "status": "DISCONNECTED"
+            },
+            {
+              "id": "S-5",
+              "status": "DISCONNECTED"
+            }
+          ]
+        },
+        "uncertaintyPropagated": false,
+        "units": "m"
+      },
+      "scenarioChangedSourceLayout": false,
+      "schema": "payload.calibration-access-result.v1",
+      "source": {
+        "acquisition": {
+          "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+          "id": "calibration-experiment"
+        },
+        "evidence": {
+          "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+          "id": "calibration-evidence-experiment"
+        }
+      }
+    },
+    "schema": "payload.calibration-access-receipt.v1",
+    "startedAt": "2026-09-05T12:30:00.000Z"
+  },
+  "projection": {
+    "schema": "payload.calibration-access-projection.v1",
+    "sourceKind": "LOCAL_ANALYSIS",
+    "source": {
+      "acquisition": {
+        "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+        "id": "calibration-experiment"
+      },
+      "evidence": {
+        "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+        "id": "calibration-evidence-experiment"
+      }
+    },
+    "receiptDigest": "sha256:6725ea1f9f375435739e297240e615b63870a33e0e1d6cc12d7113addfc0547d",
+    "input": {
+      "fromId": "S-1",
+      "heldOutRmsLimitM": 0.01,
+      "layout": {
+        "acquisition": {
+          "digest": "sha256:e9ce7601eb31c37f9c3352327c0d25d747da9ac92c2db291bc59b7cc07d190ef",
+          "id": "spatial-demo-layout"
+        },
+        "evidence": {
+          "contentDigest": "sha256:ccb47f376511e7e38c478a17e5e215277a403c5da471f9234b1f062d3eb56fcc",
+          "id": "spatial-evidence-layout"
+        }
+      },
+      "registration": {
+        "classification": "SYNTHETIC",
+        "fit": [
+          {
+            "evidence": {
+              "acquisition": {
+                "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26",
+                "id": "calibration-controls"
+              },
+              "evidence": {
+                "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea",
+                "id": "calibration-evidence-controls"
+              }
+            },
+            "id": "C-0",
+            "observedReferenceM": [
+              2.001,
+              3,
+              0.5
+            ],
+            "sourceM": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "evidence": {
+              "acquisition": {
+                "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26",
+                "id": "calibration-controls"
+              },
+              "evidence": {
+                "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea",
+                "id": "calibration-evidence-controls"
+              }
+            },
+            "id": "C-1",
+            "observedReferenceM": [
+              3.9591331556824834,
+              3.3973386615901227,
+              0.5
+            ],
+            "sourceM": [
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "evidence": {
+              "acquisition": {
+                "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26",
+                "id": "calibration-controls"
+              },
+              "evidence": {
+                "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea",
+                "id": "calibration-evidence-controls"
+              }
+            },
+            "id": "C-2",
+            "observedReferenceM": [
+              1.4044920076148164,
+              5.940199733523725,
+              0.5
+            ],
+            "sourceM": [
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "evidence": {
+              "acquisition": {
+                "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26",
+                "id": "calibration-controls"
+              },
+              "evidence": {
+                "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea",
+                "id": "calibration-evidence-controls"
+              }
+            },
+            "id": "C-3",
+            "observedReferenceM": [
+              1.9995,
+              3,
+              2.5
+            ],
+            "sourceM": [
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "evidence": {
+              "acquisition": {
+                "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26",
+                "id": "calibration-controls"
+              },
+              "evidence": {
+                "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea",
+                "id": "calibration-evidence-controls"
+              }
+            },
+            "id": "C-4",
+            "observedReferenceM": [
+              3.562794494092361,
+              5.3574718172726055,
+              2.5
+            ],
+            "sourceM": [
+              2,
+              2,
+              2
+            ]
+          }
+        ],
+        "heldOut": [
+          {
+            "evidence": {
+              "acquisition": {
+                "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26",
+                "id": "calibration-controls"
+              },
+              "evidence": {
+                "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea",
+                "id": "calibration-evidence-controls"
+              }
+            },
+            "id": "H-1",
+            "observedReferenceM": [
+              2.80139724704618,
+              4.178735908636303,
+              1.5
+            ],
+            "sourceM": [
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "heldOutIndependence": "SYNTHETIC",
+        "initial": {
+          "rotation": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "translationM": [
+            0,
+            0,
+            0
+          ]
+        },
+        "noise": {
+          "controlOrder": [
+            "C-0",
+            "C-1",
+            "C-2",
+            "C-3",
+            "C-4"
+          ],
+          "convention": "REFERENCE_XYZ_RESIDUAL_M2",
+          "covariance": [
+            [
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0
+            ],
+            [
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0
+            ],
+            [
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004
+            ],
+            [
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0
+            ],
+            [
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0
+            ],
+            [
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004
+            ],
+            [
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0
+            ],
+            [
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0
+            ],
+            [
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004
+            ],
+            [
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0,
+              0
+            ],
+            [
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004,
+              0
+            ],
+            [
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0,
+              0.000004
+            ],
+            [
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0,
+              0
+            ],
+            [
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001,
+              0
+            ],
+            [
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.000004,
+              0,
+              0,
+              0.00010400000000000001
+            ]
+          ],
+          "evidence": {
+            "acquisition": {
+              "digest": "sha256:a138497d460fa1e3a273c3f1a0e244d2ea2b7b02a1adb8a87a16dd2e44866339",
+              "id": "calibration-covariance"
+            },
+            "evidence": {
+              "contentDigest": "sha256:c73d973224ead7d162831d59926871b5161c98a4af1f89528bd57273454bb6cf",
+              "id": "calibration-evidence-covariance"
+            }
+          }
+        },
+        "referenceFrameId": "plan-frame",
+        "schema": "payload.rigid-registration.v1",
+        "sourceFrameId": "scan-fixture",
+        "sourceTreatment": "FIXED_CONDITIONAL",
+        "units": "m"
+      },
+      "scenario": {
+        "assumedState": "CLOSED",
+        "baselineLayoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+        "passageId": "P-07",
+        "provenance": {
+          "author": "NotationsOS demonstration fixture",
+          "kind": "SCENARIO_ASSUMPTION",
+          "note": "What if the studio connection is closed?",
+          "sourceIds": [
+            "plan"
+          ]
+        },
+        "schema": "payload.spatial-scenario.v1"
+      },
+      "schema": "payload.calibration-access-experiment.v1",
+      "sourceAnchors": {
+        "evidence": {
+          "acquisition": {
+            "digest": "sha256:e2250dbf88de84ec09fad63d2261ed0407dab75e1e78b529dce507d14d893d84",
+            "id": "calibration-model"
+          },
+          "evidence": {
+            "contentDigest": "sha256:22cd7fc1374689ca16255a754e2605e9d3d23a1f683135d65b0a81f8bc37244b",
+            "id": "calibration-evidence-model"
+          }
+        },
+        "frameId": "scan-fixture",
+        "points": [
+          {
+            "pointM": [
+              -0.19866933079506122,
+              -0.9800665778412416,
+              -0.5
+            ],
+            "spaceId": "S-1"
+          },
+          {
+            "pointM": [
+              4.701663558411147,
+              -1.9734132318165476,
+              -0.5
+            ],
+            "spaceId": "S-2"
+          },
+          {
+            "pointM": [
+              9.601996447617354,
+              -2.966759885791854,
+              -0.5
+            ],
+            "spaceId": "S-3"
+          },
+          {
+            "pointM": [
+              14.502329336823562,
+              -3.9601065397671595,
+              -0.5
+            ],
+            "spaceId": "S-4"
+          },
+          {
+            "pointM": [
+              19.402662226029772,
+              -4.953453193742466,
+              -0.5
+            ],
+            "spaceId": "S-5"
+          }
+        ]
+      },
+      "toId": "S-4",
+      "walkingLengths": {
+        "evidence": {
+          "acquisition": {
+            "digest": "sha256:cdef6828595260b08ea4c62d974c72b14fbdfd5ec6f6241c5d5d084e253c042d",
+            "id": "calibration-walking-lengths"
+          },
+          "evidence": {
+            "contentDigest": "sha256:466b159d692a1aebbca2f9d1c6f7e27b110350747da2828c8a1e29e8e35c5227",
+            "id": "calibration-evidence-walking-lengths"
+          }
+        },
+        "passages": [
+          {
+            "lengthM": 7,
+            "passageId": "P-01"
+          },
+          {
+            "lengthM": 9,
+            "passageId": "P-07"
+          },
+          {
+            "lengthM": 8,
+            "passageId": "P-08"
+          },
+          {
+            "lengthM": 10,
+            "passageId": "P-09"
+          }
+        ]
+      }
+    },
+    "layout": {
+      "floorId": "floor-1",
+      "frame": {
+        "axes": "X_RIGHT_Y_UP",
+        "id": "plan-frame",
+        "origin": [
+          0,
+          0
+        ],
+        "parentFrame": null,
+        "units": "m"
+      },
+      "id": "demo-floor",
+      "label": "Synthetic single-floor access example",
+      "passages": [
+        {
+          "conditions": [],
+          "direction": "BOTH",
+          "from": "S-1",
+          "id": "P-01",
+          "provenance": {
+            "author": "NotationsOS demonstration fixture",
+            "kind": "MANUAL_ANNOTATION",
+            "note": "Synthetic declared connections; no measured building or polygon inference.",
+            "sourceIds": [
+              "plan"
+            ]
+          },
+          "state": "OPEN",
+          "to": "S-2"
+        },
+        {
+          "conditions": [],
+          "direction": "BOTH",
+          "from": "S-2",
+          "id": "P-07",
+          "provenance": {
+            "author": "NotationsOS demonstration fixture",
+            "kind": "MANUAL_ANNOTATION",
+            "note": "Synthetic declared connections; no measured building or polygon inference.",
+            "sourceIds": [
+              "plan"
+            ]
+          },
+          "state": "OPEN",
+          "to": "S-3"
+        },
+        {
+          "conditions": [],
+          "direction": "BOTH",
+          "from": "S-3",
+          "id": "P-08",
+          "provenance": {
+            "author": "NotationsOS demonstration fixture",
+            "kind": "MANUAL_ANNOTATION",
+            "note": "Synthetic declared connections; no measured building or polygon inference.",
+            "sourceIds": [
+              "plan"
+            ]
+          },
+          "state": "OPEN",
+          "to": "S-4"
+        },
+        {
+          "conditions": [],
+          "direction": "BOTH",
+          "from": "S-4",
+          "id": "P-09",
+          "provenance": {
+            "author": "NotationsOS demonstration fixture",
+            "kind": "MANUAL_ANNOTATION",
+            "note": "Synthetic declared connections; no measured building or polygon inference.",
+            "sourceIds": [
+              "plan"
+            ]
+          },
+          "state": "UNKNOWN",
+          "to": "S-5"
+        }
+      ],
+      "provenance": {
+        "author": "NotationsOS demonstration fixture",
+        "kind": "MANUAL_ANNOTATION",
+        "note": "Synthetic declared connections; no measured building or polygon inference.",
+        "sourceIds": [
+          "plan"
+        ]
+      },
+      "schema": "payload.spatial-layout.v1",
+      "sourceArtifacts": [
+        {
+          "id": "plan",
+          "reference": {
+            "acquisition": {
+              "digest": "sha256:e176383db97a16243701fee2ac651a72a52fdfe3bbdb7098179686ec4937fde6",
+              "id": "spatial-demo-plan"
+            },
+            "evidence": {
+              "contentDigest": "sha256:a2142cf576d450547b8bce5b9be241d76860007a04b7894742a638c5495f70e0",
+              "id": "spatial-evidence-plan"
+            }
+          }
+        }
+      ],
+      "spaces": [
+        {
+          "id": "S-1",
+          "label": "Entrance",
+          "polygon": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "S-2",
+          "label": "Hall",
+          "polygon": [
+            [
+              5,
+              0
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "S-3",
+          "label": "Studio",
+          "polygon": [
+            [
+              10,
+              0
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              14,
+              4
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "S-4",
+          "label": "Office",
+          "polygon": [
+            [
+              15,
+              0
+            ],
+            [
+              19,
+              0
+            ],
+            [
+              19,
+              4
+            ],
+            [
+              15,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "S-5",
+          "label": "Store",
+          "polygon": [
+            [
+              20,
+              0
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              24,
+              4
+            ],
+            [
+              20,
+              4
+            ]
+          ]
+        }
+      ]
+    },
+    "result": {
+      "baseline": {
+        "classification": "SYNTHETIC",
+        "coverage": {
+          "unknownAccessPassageIds": [
+            "P-09"
+          ],
+          "unknownLengthPassageIds": []
+        },
+        "digest": "sha256:44b74e34112ebcdb743da4f9c1a3f90183116c604dfb9b5ecc8ee92834ffb1a2",
+        "euclidean": {
+          "anchors": [
+            {
+              "pointM": [
+                1.9999534037172224,
+                2.000049647367574,
+                -0.00006070380404699094
+              ],
+              "spaceId": "S-1"
+            },
+            {
+              "pointM": [
+                16.99995326790339,
+                1.9987727362499994,
+                0.00150259809212977
+              ],
+              "spaceId": "S-4"
+            }
+          ],
+          "distanceM": 14.999999999999996,
+          "model": "LOCAL_CARTESIAN_3D"
+        },
+        "fieldAccuracyEstablished": false,
+        "frameId": "plan-frame",
+        "interpretation": "DECLARED_LENGTHS_AND_ACCESS; NOT_TRAVEL_TIME_OR_EVACUATION_COMPLIANCE",
+        "layoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+        "method": {
+          "euclidean": "LOCAL_CARTESIAN_3D",
+          "id": "explicit-local-access-distance",
+          "network": "DIJKSTRA_DIRECTED_NONNEGATIVE_METRES",
+          "tieBreak": "STABLE_SPACE_AND_PASSAGE_ID_ORDER",
+          "unknownAccess": "CONFIRMED_AND_POSSIBLE",
+          "unknownLengths": "REFUSE_WEIGHTED_PATHS",
+          "version": "1.0.0"
+        },
+        "metricDigest": "sha256:597df63926d244dcd37a8981b0024710e7399bd3824a8f2f9d3b56c40952be5b",
+        "metricEvidence": {
+          "acquisition": {
+            "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+            "id": "calibration-experiment"
+          },
+          "evidence": {
+            "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+            "id": "calibration-evidence-experiment"
+          }
+        },
+        "network": {
+          "confirmed": {
+            "lengthM": 24,
+            "passageIds": [
+              "P-01",
+              "P-07",
+              "P-08"
+            ],
+            "spaceIds": [
+              "S-1",
+              "S-2",
+              "S-3",
+              "S-4"
+            ]
+          },
+          "model": "SHORTEST_PERMITTED_NETWORK_LENGTH",
+          "possible": {
+            "lengthM": 24,
+            "passageIds": [
+              "P-01",
+              "P-07",
+              "P-08"
+            ],
+            "spaceIds": [
+              "S-1",
+              "S-2",
+              "S-3",
+              "S-4"
+            ]
+          },
+          "status": "CONFIRMED_ROUTE"
+        },
+        "parameters": {
+          "fromId": "S-1",
+          "toId": "S-4"
+        },
+        "scenarioDigest": null,
+        "schema": "payload.access-distance-result.v1",
+        "source": {
+          "acquisition": {
+            "digest": "sha256:e9ce7601eb31c37f9c3352327c0d25d747da9ac92c2db291bc59b7cc07d190ef",
+            "id": "spatial-demo-layout"
+          },
+          "evidence": {
+            "contentDigest": "sha256:ccb47f376511e7e38c478a17e5e215277a403c5da471f9234b1f062d3eb56fcc",
+            "id": "spatial-evidence-layout"
+          }
+        },
+        "topologicalReachability": {
+          "rootSpaceId": "S-1",
+          "spaces": [
+            {
+              "id": "S-1",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-2",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-3",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-4",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-5",
+              "status": "POSSIBLE_ONLY"
+            }
+          ]
+        },
+        "uncertaintyPropagated": false,
+        "units": "m"
+      },
+      "canonicalAdmission": false,
+      "digest": "sha256:830fa28b657ff05df5ce5c5a9f8b4860a4160af3aa0360febeefce032906ee38",
+      "fieldAccuracyEstablished": false,
+      "heldOutCheck": {
+        "independentAccuracyEstablished": false,
+        "limitM": 0.01,
+        "rmsM": 0.020017480703395134,
+        "status": "OUTSIDE_DECLARED_TOLERANCE"
+      },
+      "inputDigest": "sha256:f21ccec63efdadc81380d18c3e6ea94e69fa8771ef4aa46682881bce3cf72165",
+      "layoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+      "method": {
+        "accuracy": "NO_AUTOMATIC_FIELD_ACCURACY_CLAIM",
+        "distance": {
+          "euclidean": "LOCAL_CARTESIAN_3D",
+          "id": "explicit-local-access-distance",
+          "network": "DIJKSTRA_DIRECTED_NONNEGATIVE_METRES",
+          "tieBreak": "STABLE_SPACE_AND_PASSAGE_ID_ORDER",
+          "unknownAccess": "CONFIRMED_AND_POSSIBLE",
+          "unknownLengths": "REFUSE_WEIGHTED_PATHS",
+          "version": "1.0.0"
+        },
+        "id": "calibration-access-experiment",
+        "registration": {
+          "covariance": "LOCAL_GAUSSIAN_FIXED_SOURCE_ABSOLUTE_NOISE",
+          "id": "dense-weighted-rigid-registration",
+          "loss": "SQUARED",
+          "maxIterations": 40,
+          "perturbation": "REFERENCE_TRANSLATION_XYZ_AND_LEFT_ROTATION_XYZ",
+          "rankTolerance": 1e-8,
+          "rotationStepToleranceRad": 1e-8,
+          "solver": "GAUSS_NEWTON_BACKTRACKING_WHITENED_REORTHOGONALIZED_QR",
+          "translationStepToleranceM": 1e-8,
+          "version": "1.0.0"
+        },
+        "version": "1.0.0"
+      },
+      "metric": {
+        "anchors": [
+          {
+            "pointM": [
+              1.9999534037172224,
+              2.000049647367574,
+              -0.00006070380404699094
+            ],
+            "spaceId": "S-1"
+          },
+          {
+            "pointM": [
+              6.9999533584459455,
+              1.9996240103283827,
+              0.00046039682801196635
+            ],
+            "spaceId": "S-2"
+          },
+          {
+            "pointM": [
+              11.999953313174666,
+              1.999198373289191,
+              0.0009814974600708681
+            ],
+            "spaceId": "S-3"
+          },
+          {
+            "pointM": [
+              16.99995326790339,
+              1.9987727362499994,
+              0.00150259809212977
+            ],
+            "spaceId": "S-4"
+          },
+          {
+            "pointM": [
+              21.999953222632115,
+              1.9983470992108079,
+              0.0020236987241887827
+            ],
+            "spaceId": "S-5"
+          }
+        ],
+        "classification": "SYNTHETIC",
+        "evidence": {
+          "acquisition": {
+            "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+            "id": "calibration-experiment"
+          },
+          "evidence": {
+            "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+            "id": "calibration-evidence-experiment"
+          }
+        },
+        "frameId": "plan-frame",
+        "layoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+        "passages": [
+          {
+            "lengthM": 7,
+            "passageId": "P-01"
+          },
+          {
+            "lengthM": 9,
+            "passageId": "P-07"
+          },
+          {
+            "lengthM": 8,
+            "passageId": "P-08"
+          },
+          {
+            "lengthM": 10,
+            "passageId": "P-09"
+          }
+        ],
+        "schema": "payload.access-metric.v1",
+        "units": "m"
+      },
+      "registration": {
+        "canonicalAdmission": false,
+        "classification": "SYNTHETIC",
+        "covariance": {
+          "convention": "REFERENCE_TRANSLATION_XYZ_AND_LEFT_ROTATION_XYZ",
+          "interpretation": "LOCAL_APPROXIMATION_CONDITIONAL_ON_SUPPLIED_ABSOLUTE_COVARIANCE",
+          "matrix": [
+            [
+              0.0000405997480250743,
+              -0.000004425412389137974,
+              -0.000005845952171558868,
+              9.479514195018849e-7,
+              -0.000008141955874464236,
+              0.000008855232746217863
+            ],
+            [
+              -0.000004425412389137974,
+              0.000031323037027296375,
+              -0.00000718690919683263,
+              0.000006074855026581293,
+              -4.5770427376278855e-7,
+              -0.000004207027417918661
+            ],
+            [
+              -0.000005845952171558868,
+              -0.00000718690919683263,
+              0.00003850858749664892,
+              -0.000009341662818089137,
+              0.000006608977395926183,
+              -4.902471457390965e-7
+            ],
+            [
+              9.479514195018849e-7,
+              0.000006074855026581293,
+              -0.000009341662818089137,
+              0.000007944527743267703,
+              -5.00898058825168e-7,
+              4.804437227549073e-7
+            ],
+            [
+              -0.000008141955874464236,
+              -4.5770427376278855e-7,
+              0.000006608977395926183,
+              -5.00898058825168e-7,
+              0.000010315176064446624,
+              9.72934598247965e-8
+            ],
+            [
+              0.000008855232746217863,
+              -0.000004207027417918661,
+              -4.902471457390965e-7,
+              4.804437227549073e-7,
+              9.72934598247965e-8,
+              0.000007843237368756276
+            ]
+          ],
+          "units": "m_and_rad"
+        },
+        "digest": "sha256:96fedf000bae8248bc7f66bf2797ec6aa46aa5242a7300d925d7c1a353920663",
+        "fieldAccuracyEstablished": false,
+        "fit": {
+          "residuals": [
+            {
+              "distanceM": 0.0010166200343734112,
+              "id": "C-0",
+              "vectorM": [
+                -0.0010135789170495624,
+                0.00004971782091001131,
+                -0.000060845800890385604
+              ]
+            },
+            {
+              "distanceM": 0.0010368927444645351,
+              "id": "C-1",
+              "vectorM": [
+                0.0010202277516504488,
+                -0.00011714467334789092,
+                0.0001433841825017046
+              ]
+            },
+            {
+              "distanceM": 0.00030761469119169557,
+              "id": "C-2",
+              "vectorM": [
+                -0.00026328189476054753,
+                0.00010044378298346146,
+                -0.00012337134427503615
+              ]
+            },
+            {
+              "distanceM": 0.0002889261183872984,
+              "id": "C-3",
+              "vectorM": [
+                0.0002779808545951834,
+                0.00005001412764871205,
+                -0.00006085666274469048
+              ]
+            },
+            {
+              "distanceM": 0.00013300625883308468,
+              "id": "C-4",
+              "vectorM": [
+                -0.000021347795178261464,
+                -0.00008303105855933524,
+                0.00010168962505741064
+              ]
+            }
+          ],
+          "rmsM": 0.0006788900681000832,
+          "weightedSquaredResidual": 0.02304458622824679
+        },
+        "heldOut": {
+          "independence": "SYNTHETIC",
+          "residuals": [
+            {
+              "distanceM": 0.020017480703395134,
+              "id": "H-1",
+              "vectorM": [
+                -0.02001746335611365,
+                -0.000016656618824661962,
+                0.00002042191208362354
+              ]
+            }
+          ],
+          "rmsM": 0.020017480703395134,
+          "usedForEstimation": false
+        },
+        "inputDigest": "sha256:bd43ab7592784b95c72444bf87d4df820162b5af32919b234e54fac2e648f0ae",
+        "iterations": 3,
+        "method": {
+          "covariance": "LOCAL_GAUSSIAN_FIXED_SOURCE_ABSOLUTE_NOISE",
+          "id": "dense-weighted-rigid-registration",
+          "loss": "SQUARED",
+          "maxIterations": 40,
+          "perturbation": "REFERENCE_TRANSLATION_XYZ_AND_LEFT_ROTATION_XYZ",
+          "rankTolerance": 1e-8,
+          "rotationStepToleranceRad": 1e-8,
+          "solver": "GAUSS_NEWTON_BACKTRACKING_WHITENED_REORTHOGONALIZED_QR",
+          "translationStepToleranceM": 1e-8,
+          "version": "1.0.0"
+        },
+        "referenceFrameId": "plan-frame",
+        "schema": "payload.rigid-registration-result.v1",
+        "sourceFrameId": "scan-fixture",
+        "status": "LOCAL_STATIONARY",
+        "transform": {
+          "rotation": [
+            [
+              0.9800834811755917,
+              -0.19858589845429814,
+              -0.00010422011417751388
+            ],
+            [
+              0.19858589954793232,
+              0.980083486495266,
+              1.4815336938375291e-7
+            ],
+            [
+              0.00010211499169606285,
+              -0.000020841847794885475,
+              0.9999999945690728
+            ]
+          ],
+          "translationM": [
+            1.9999864210829503,
+            3.00004971782091,
+            0.4999391541991096
+          ]
+        },
+        "units": "m"
+      },
+      "scenario": {
+        "classification": "SYNTHETIC",
+        "coverage": {
+          "unknownAccessPassageIds": [
+            "P-09"
+          ],
+          "unknownLengthPassageIds": []
+        },
+        "digest": "sha256:4d843337d22480087919554ada37644006f37ac3e60f9fea74349ddb3c12abf8",
+        "euclidean": {
+          "anchors": [
+            {
+              "pointM": [
+                1.9999534037172224,
+                2.000049647367574,
+                -0.00006070380404699094
+              ],
+              "spaceId": "S-1"
+            },
+            {
+              "pointM": [
+                16.99995326790339,
+                1.9987727362499994,
+                0.00150259809212977
+              ],
+              "spaceId": "S-4"
+            }
+          ],
+          "distanceM": 14.999999999999996,
+          "model": "LOCAL_CARTESIAN_3D"
+        },
+        "fieldAccuracyEstablished": false,
+        "frameId": "plan-frame",
+        "interpretation": "DECLARED_LENGTHS_AND_ACCESS; NOT_TRAVEL_TIME_OR_EVACUATION_COMPLIANCE",
+        "layoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+        "method": {
+          "euclidean": "LOCAL_CARTESIAN_3D",
+          "id": "explicit-local-access-distance",
+          "network": "DIJKSTRA_DIRECTED_NONNEGATIVE_METRES",
+          "tieBreak": "STABLE_SPACE_AND_PASSAGE_ID_ORDER",
+          "unknownAccess": "CONFIRMED_AND_POSSIBLE",
+          "unknownLengths": "REFUSE_WEIGHTED_PATHS",
+          "version": "1.0.0"
+        },
+        "metricDigest": "sha256:597df63926d244dcd37a8981b0024710e7399bd3824a8f2f9d3b56c40952be5b",
+        "metricEvidence": {
+          "acquisition": {
+            "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+            "id": "calibration-experiment"
+          },
+          "evidence": {
+            "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+            "id": "calibration-evidence-experiment"
+          }
+        },
+        "network": {
+          "confirmed": null,
+          "model": "SHORTEST_PERMITTED_NETWORK_LENGTH",
+          "possible": null,
+          "status": "DISCONNECTED"
+        },
+        "parameters": {
+          "fromId": "S-1",
+          "toId": "S-4"
+        },
+        "scenarioDigest": "sha256:1ac2be14e5fcf909ef994799390582f60ce3bd141262fb158a67e7cf8dd8c522",
+        "schema": "payload.access-distance-result.v1",
+        "source": {
+          "acquisition": {
+            "digest": "sha256:e9ce7601eb31c37f9c3352327c0d25d747da9ac92c2db291bc59b7cc07d190ef",
+            "id": "spatial-demo-layout"
+          },
+          "evidence": {
+            "contentDigest": "sha256:ccb47f376511e7e38c478a17e5e215277a403c5da471f9234b1f062d3eb56fcc",
+            "id": "spatial-evidence-layout"
+          }
+        },
+        "topologicalReachability": {
+          "rootSpaceId": "S-1",
+          "spaces": [
+            {
+              "id": "S-1",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-2",
+              "status": "CONFIRMED"
+            },
+            {
+              "id": "S-3",
+              "status": "DISCONNECTED"
+            },
+            {
+              "id": "S-4",
+              "status": "DISCONNECTED"
+            },
+            {
+              "id": "S-5",
+              "status": "DISCONNECTED"
+            }
+          ]
+        },
+        "uncertaintyPropagated": false,
+        "units": "m"
+      },
+      "scenarioChangedSourceLayout": false,
+      "schema": "payload.calibration-access-result.v1",
+      "source": {
+        "acquisition": {
+          "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6",
+          "id": "calibration-experiment"
+        },
+        "evidence": {
+          "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6",
+          "id": "calibration-evidence-experiment"
+        }
+      }
+    },
+    "inspection": "HISTORICAL",
+    "currentRightsGrant": false,
+    "canonicalAdmission": false
+  }
+}

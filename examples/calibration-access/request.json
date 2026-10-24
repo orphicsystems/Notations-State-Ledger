@@ -1,0 +1,15 @@
+{
+  "schema": "payload.calibration-access-request.v1",
+  "requestId": "calibration-access-demo",
+  "purpose": "SPATIAL_INQUIRY",
+  "source": {
+    "acquisition": {
+      "id": "calibration-experiment",
+      "digest": "sha256:2708878dda2e7749cfcf50877b2915710009764c14419358936cef8c598282d6"
+    },
+    "evidence": {
+      "id": "calibration-evidence-experiment",
+      "contentDigest": "sha256:b751c72a3f00974c8e9c7e28dfb4e0afbda523270b4ccfa57a47b57a48a3b5c6"
+    }
+  }
+}

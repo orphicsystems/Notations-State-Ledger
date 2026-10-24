@@ -1,0 +1,567 @@
+{
+  "schema": "payload.calibration-access-experiment.v1",
+  "registration": {
+    "schema": "payload.rigid-registration.v1",
+    "sourceFrameId": "scan-fixture",
+    "referenceFrameId": "plan-frame",
+    "units": "m",
+    "classification": "SYNTHETIC",
+    "sourceTreatment": "FIXED_CONDITIONAL",
+    "initial": {
+      "rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "translationM": [
+        0,
+        0,
+        0
+      ]
+    },
+    "fit": [
+      {
+        "id": "C-0",
+        "sourceM": [
+          0,
+          0,
+          0
+        ],
+        "observedReferenceM": [
+          2.001,
+          3,
+          0.5
+        ],
+        "evidence": {
+          "acquisition": {
+            "id": "calibration-controls",
+            "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26"
+          },
+          "evidence": {
+            "id": "calibration-evidence-controls",
+            "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea"
+          }
+        }
+      },
+      {
+        "id": "C-1",
+        "sourceM": [
+          2,
+          0,
+          0
+        ],
+        "observedReferenceM": [
+          3.9591331556824834,
+          3.3973386615901227,
+          0.5
+        ],
+        "evidence": {
+          "acquisition": {
+            "id": "calibration-controls",
+            "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26"
+          },
+          "evidence": {
+            "id": "calibration-evidence-controls",
+            "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea"
+          }
+        }
+      },
+      {
+        "id": "C-2",
+        "sourceM": [
+          0,
+          3,
+          0
+        ],
+        "observedReferenceM": [
+          1.4044920076148164,
+          5.940199733523725,
+          0.5
+        ],
+        "evidence": {
+          "acquisition": {
+            "id": "calibration-controls",
+            "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26"
+          },
+          "evidence": {
+            "id": "calibration-evidence-controls",
+            "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea"
+          }
+        }
+      },
+      {
+        "id": "C-3",
+        "sourceM": [
+          0,
+          0,
+          2
+        ],
+        "observedReferenceM": [
+          1.9995,
+          3,
+          2.5
+        ],
+        "evidence": {
+          "acquisition": {
+            "id": "calibration-controls",
+            "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26"
+          },
+          "evidence": {
+            "id": "calibration-evidence-controls",
+            "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea"
+          }
+        }
+      },
+      {
+        "id": "C-4",
+        "sourceM": [
+          2,
+          2,
+          2
+        ],
+        "observedReferenceM": [
+          3.562794494092361,
+          5.3574718172726055,
+          2.5
+        ],
+        "evidence": {
+          "acquisition": {
+            "id": "calibration-controls",
+            "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26"
+          },
+          "evidence": {
+            "id": "calibration-evidence-controls",
+            "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea"
+          }
+        }
+      }
+    ],
+    "heldOut": [
+      {
+        "id": "H-1",
+        "sourceM": [
+          1,
+          1,
+          1
+        ],
+        "observedReferenceM": [
+          2.80139724704618,
+          4.178735908636303,
+          1.5
+        ],
+        "evidence": {
+          "acquisition": {
+            "id": "calibration-controls",
+            "digest": "sha256:a6d6bf86c8152c3e836f0b1b41f34df9283f4ec5dcc73e2b55015bed99fbcb26"
+          },
+          "evidence": {
+            "id": "calibration-evidence-controls",
+            "contentDigest": "sha256:dff1675280c071fa4e1c91bb2bbf99f80478bab4274fe2c15e15f75ca8d009ea"
+          }
+        }
+      }
+    ],
+    "noise": {
+      "convention": "REFERENCE_XYZ_RESIDUAL_M2",
+      "controlOrder": [
+        "C-0",
+        "C-1",
+        "C-2",
+        "C-3",
+        "C-4"
+      ],
+      "covariance": [
+        [
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0
+        ],
+        [
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0
+        ],
+        [
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004
+        ],
+        [
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0
+        ],
+        [
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0
+        ],
+        [
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004
+        ],
+        [
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0
+        ],
+        [
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0
+        ],
+        [
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004
+        ],
+        [
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0,
+          0
+        ],
+        [
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004,
+          0
+        ],
+        [
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0,
+          0.000004
+        ],
+        [
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0,
+          0
+        ],
+        [
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001,
+          0
+        ],
+        [
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.000004,
+          0,
+          0,
+          0.00010400000000000001
+        ]
+      ],
+      "evidence": {
+        "acquisition": {
+          "id": "calibration-covariance",
+          "digest": "sha256:a138497d460fa1e3a273c3f1a0e244d2ea2b7b02a1adb8a87a16dd2e44866339"
+        },
+        "evidence": {
+          "id": "calibration-evidence-covariance",
+          "contentDigest": "sha256:c73d973224ead7d162831d59926871b5161c98a4af1f89528bd57273454bb6cf"
+        }
+      }
+    },
+    "heldOutIndependence": "SYNTHETIC"
+  },
+  "layout": {
+    "acquisition": {
+      "id": "spatial-demo-layout",
+      "digest": "sha256:e9ce7601eb31c37f9c3352327c0d25d747da9ac92c2db291bc59b7cc07d190ef"
+    },
+    "evidence": {
+      "id": "spatial-evidence-layout",
+      "contentDigest": "sha256:ccb47f376511e7e38c478a17e5e215277a403c5da471f9234b1f062d3eb56fcc"
+    }
+  },
+  "sourceAnchors": {
+    "evidence": {
+      "acquisition": {
+        "id": "calibration-model",
+        "digest": "sha256:e2250dbf88de84ec09fad63d2261ed0407dab75e1e78b529dce507d14d893d84"
+      },
+      "evidence": {
+        "id": "calibration-evidence-model",
+        "contentDigest": "sha256:22cd7fc1374689ca16255a754e2605e9d3d23a1f683135d65b0a81f8bc37244b"
+      }
+    },
+    "frameId": "scan-fixture",
+    "points": [
+      {
+        "spaceId": "S-1",
+        "pointM": [
+          -0.19866933079506122,
+          -0.9800665778412416,
+          -0.5
+        ]
+      },
+      {
+        "spaceId": "S-2",
+        "pointM": [
+          4.701663558411147,
+          -1.9734132318165476,
+          -0.5
+        ]
+      },
+      {
+        "spaceId": "S-3",
+        "pointM": [
+          9.601996447617354,
+          -2.966759885791854,
+          -0.5
+        ]
+      },
+      {
+        "spaceId": "S-4",
+        "pointM": [
+          14.502329336823562,
+          -3.9601065397671595,
+          -0.5
+        ]
+      },
+      {
+        "spaceId": "S-5",
+        "pointM": [
+          19.402662226029772,
+          -4.953453193742466,
+          -0.5
+        ]
+      }
+    ]
+  },
+  "walkingLengths": {
+    "evidence": {
+      "acquisition": {
+        "id": "calibration-walking-lengths",
+        "digest": "sha256:cdef6828595260b08ea4c62d974c72b14fbdfd5ec6f6241c5d5d084e253c042d"
+      },
+      "evidence": {
+        "id": "calibration-evidence-walking-lengths",
+        "contentDigest": "sha256:466b159d692a1aebbca2f9d1c6f7e27b110350747da2828c8a1e29e8e35c5227"
+      }
+    },
+    "passages": [
+      {
+        "passageId": "P-01",
+        "lengthM": 7
+      },
+      {
+        "passageId": "P-07",
+        "lengthM": 9
+      },
+      {
+        "passageId": "P-08",
+        "lengthM": 8
+      },
+      {
+        "passageId": "P-09",
+        "lengthM": 10
+      }
+    ]
+  },
+  "fromId": "S-1",
+  "toId": "S-4",
+  "scenario": {
+    "schema": "payload.spatial-scenario.v1",
+    "baselineLayoutDigest": "sha256:35b8ba58c1f8076cd14904ac510364eeb198d5e5cf284530a91a8879152cf707",
+    "passageId": "P-07",
+    "assumedState": "CLOSED",
+    "provenance": {
+      "kind": "SCENARIO_ASSUMPTION",
+      "author": "NotationsOS demonstration fixture",
+      "note": "What if the studio connection is closed?",
+      "sourceIds": [
+        "plan"
+      ]
+    }
+  },
+  "heldOutRmsLimitM": 0.01
+}
